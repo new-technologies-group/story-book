@@ -4,10 +4,10 @@
   "description": "component library for magnum ai frontend suite",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git@https://github.com/new-technologies-group/story-book.git"
   },
   "bugs": {
-    "url": ""
+    "url": "https://github.com/new-technologies-group/story-book/issues"
   },
   "homepage": "",
   "main": "dist/index/.js",

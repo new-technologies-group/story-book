@@ -23,7 +23,8 @@
     "start": "yarn run storybook",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "build": "cross-env --presets=env, babel --extensions .ts,.tsx ./src -d ./dist"
+    "build": "cross-env --presets=env, babel --extensions .ts,.tsx ./src -d ./dist",
+    "release": "auto shipit --base-branch=master"
   },
   "dependencies": {
     "react": "^17.0.2",

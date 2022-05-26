@@ -1,0 +1,59 @@
+{
+  "name": "@ydstarters/magnum-storybook",
+  "version": "0.0.0",
+  "description": "component library for magnum ai frontend suite",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "main": "dist/index/.js",
+  "keywords": [],
+  "author": "new technologies group",
+  "license": "ISC",
+  "babelMacros": {
+    "twin": {
+      "preset": "styled-components"
+    }
+  },
+  "scripts": {
+    "start": "yarn run storybook",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "build": "cross-env --presets=env, babel --extensions .ts,.tsx ./src -d ./dist"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1",
+    "styled-components": "^5.3.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "@babel/preset-react": "^7.16.0",
+    "@babel/preset-typescript": "^7.16.0",
+    "@storybook/addon-actions": "^6.4.8",
+    "@storybook/addon-essentials": "^6.4.8",
+    "@storybook/addon-links": "^6.4.8",
+    "@storybook/addons": "^6.5.0",
+    "@storybook/react": "^6.4.8",
+    "@types/react": "^17.0.37",
+    "@types/react-dom": "^17.0.11",
+    "@types/styled-components": "^5.1.17",
+    "auto": "^10.37.0",
+    "autoprefixer": "^10.4.0",
+    "babel-plugin-styled-components": "^2.0.2",
+    "cross-env": "^7.0.3",
+    "postcss": "^8.4.14",
+    "storybook-tailwind-dark-mode": "^1.0.12",
+    "tailwindcss": "2.2.19",
+    "twin.macro": "^2.8.2",
+    "typescript": "^4.5.2"
+  },
+  "private": false
+}

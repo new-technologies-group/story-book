@@ -1,6 +1,7 @@
 import { FC, createElement } from 'react';
 import { SiTwitter, SiDiscord, SiLinkedin, SiInstagram, SiTwitch } from 'react-icons/si';
 import MagicEden from './MagicEden';
+import Solana from './Solana';
 
 export interface Icons {
   twitter: 'twitter';
@@ -9,6 +10,7 @@ export interface Icons {
   instagram: 'instagram';
   twitch: 'twitch';
   'magic eden': 'magic eden';
+  solana: 'solana';
 }
 
 export interface IconProps {
@@ -22,6 +24,7 @@ const elements = {
   instagram: SiInstagram,
   twitch: SiTwitch,
   'magic eden': MagicEden,
+  solana: Solana,
 };
 
 export const Icon: FC<IconProps> = ({ variant, ...props }) => {

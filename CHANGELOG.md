@@ -1,3 +1,15 @@
+# v0.1.5 (Tue May 31 2022)
+
+#### 🐛 Bug Fix
+
+- rollup configured, icon component consolidated [#1](https://github.com/new-technologies-group/story-book/pull/1) ([@yondav](https://github.com/yondav))
+
+#### Authors: 1
+
+- Yoni David ([@yondav](https://github.com/yondav))
+
+---
+
 # v0.1.4 (Tue May 31 2022)
 
 #### ⚠️ Pushed to `master`

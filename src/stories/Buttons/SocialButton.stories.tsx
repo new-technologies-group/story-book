@@ -1,6 +1,6 @@
 import React from 'react';
 import { Story } from '@storybook/react/types-6-0';
-import { SocialButton } from '.';
+import { SocialButton } from '../../components/Button';
 
 export default {
   title: 'Social Button',

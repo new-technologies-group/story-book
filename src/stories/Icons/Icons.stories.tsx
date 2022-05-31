@@ -1,6 +1,6 @@
 import React from 'react';
 import { Story } from '@storybook/react/types-6-0';
-import { Icon } from '.';
+import { Icon } from '../../components/Icons';
 
 export default {
   title: 'Icon',
@@ -13,13 +13,13 @@ export default {
       control: {
         type: 'select',
         options: [
-          'twitter',
-          'discord',
-          'linkedin',
-          'instagram',
-          'twitch',
-          'magic eden',
-          'solana',
+          'Twitter',
+          'Discord',
+          'Linkedin',
+          'Instagram',
+          'Twitch',
+          'MagicEden',
+          'Solana',
         ],
       },
     },
@@ -27,10 +27,10 @@ export default {
 };
 
 const Template: Story = props => (
-  <Icon variant='twitter' {...props}>
+  <Icon variant='Twitter' {...props}>
     Heading
   </Icon>
 );
 
 export const Usage = Template.bind({});
-Usage.args = { variant: 'twitter' };
+Usage.args = { variant: 'Twitter' };

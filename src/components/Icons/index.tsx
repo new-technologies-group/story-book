@@ -1,33 +1,20 @@
 import { FC, createElement } from 'react';
-import { SiTwitter, SiDiscord, SiLinkedin, SiInstagram, SiTwitch } from 'react-icons/si';
-import MagicEden from './MagicEden';
-import Solana from './Solana';
-
+import * as icons from './Icons';
 export interface Icons {
-  twitter: 'twitter';
-  discord: 'discord';
-  linkedin: 'linkedin';
-  instagram: 'instagram';
-  twitch: 'twitch';
-  'magic eden': 'magic eden';
-  solana: 'solana';
+  Twitter: 'Twitter';
+  Discord: 'Discord';
+  Linkedin: 'Linkedin';
+  Instagram: 'Instagram';
+  Twitch: 'Twitch';
+  MagicEden: 'MagicEden';
+  Solana: 'Solana';
 }
 
 export interface IconProps {
   variant: string;
 }
 
-const elements = {
-  twitter: SiTwitter,
-  discord: SiDiscord,
-  linkedin: SiLinkedin,
-  instagram: SiInstagram,
-  twitch: SiTwitch,
-  'magic eden': MagicEden,
-  solana: Solana,
-};
-
 export const Icon: FC<IconProps> = ({ variant, ...props }) => {
   if (!variant) return null;
-  return createElement(elements[variant as keyof Icons], { ...props });
+  return createElement(icons[variant as keyof Icons], { ...props });
 };

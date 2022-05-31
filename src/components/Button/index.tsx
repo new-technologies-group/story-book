@@ -15,19 +15,19 @@ export const Button = styled.button<ButtonProps>(({ variant = 'text' }) => [
 ]);
 
 interface SocialButtonProps extends ButtonProps {
-  icon: 'twitter' | 'discord' | 'linkedin' | 'twitch' | 'instagram' | 'magic eden';
+  icon: 'Twitter' | 'Discord' | 'Linkedin' | 'Twitch' | 'Instagram' | 'MagicEden';
   children: ReactNode;
   onClick?: () => any;
 }
 
 const SocialBtn = styled(Button)<SocialButtonProps>(({ icon }) => [
   tw`flex justify-center items-center`,
-  icon === 'twitter' && tw`bg-social-twitter`,
-  icon === 'discord' && tw`bg-social-discord`,
-  icon === 'linkedin' && tw`bg-social-linkedin`,
-  icon === 'twitch' && tw`bg-social-twitch`,
-  icon === 'instagram' && tw`bg-social-instagram`,
-  icon === 'magic eden' &&
+  icon === 'Twitter' && tw`bg-social-twitter`,
+  icon === 'Discord' && tw`bg-social-discord`,
+  icon === 'Linkedin' && tw`bg-social-linkedin`,
+  icon === 'Twitch' && tw`bg-social-twitch`,
+  icon === 'Instagram' && tw`bg-social-instagram`,
+  icon === 'MagicEden' &&
     css`
       background: linear-gradient(135deg, #900ce9, #f94e9b);
     `,

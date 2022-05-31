@@ -12,7 +12,7 @@ export default {
       },
       control: {
         type: 'select',
-        options: ['twitter', 'discord', 'linkedin', 'twitch', 'instagram', 'magic eden'],
+        options: ['Twitter', 'Discord', 'Linkedin', 'Twitch', 'Instagram', 'MagicEden'],
       },
     },
     variant: {
@@ -25,10 +25,10 @@ export default {
 };
 
 const Template: Story = props => (
-  <SocialButton icon='twitter' {...props}>
+  <SocialButton icon='Twitter' {...props}>
     {props.icon}
   </SocialButton>
 );
 
 export const Usage = Template.bind({});
-Usage.args = { icon: 'twitter' };
+Usage.args = { icon: 'Twitter' };

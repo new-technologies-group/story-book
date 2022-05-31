@@ -8,7 +8,7 @@
     "resolveJsonModule": true,
     "jsx": "preserve",
     "target": "ESNext",
-    "module": "ESNext",
+    "module": "commonjs",
     "strict": true,
     "skipLibCheck": true,
     "noEmit": true,

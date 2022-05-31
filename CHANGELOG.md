@@ -1,3 +1,15 @@
+# v0.1.9 (Tue May 31 2022)
+
+#### ⚠️ Pushed to `master`
+
+- module type tsconfig ([@yondav](https://github.com/yondav))
+
+#### Authors: 1
+
+- Yoni David ([@yondav](https://github.com/yondav))
+
+---
+
 # v0.1.8 (Tue May 31 2022)
 
 #### ⚠️ Pushed to `master`

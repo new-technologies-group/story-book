@@ -1,3 +1,15 @@
+# v0.1.6 (Tue May 31 2022)
+
+#### ⚠️ Pushed to `master`
+
+- modified icon rendering for social button component ([@yondav](https://github.com/yondav))
+
+#### Authors: 1
+
+- Yoni David ([@yondav](https://github.com/yondav))
+
+---
+
 # v0.1.5 (Tue May 31 2022)
 
 #### 🐛 Bug Fix

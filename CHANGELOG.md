@@ -1,3 +1,16 @@
+# v0.1.4 (Tue May 31 2022)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of github.com:new-technologies-group/story-book ([@yondav](https://github.com/yondav))
+- module main js modified in package.json. Will work to configure whole build with rollup ([@yondav](https://github.com/yondav))
+
+#### Authors: 1
+
+- Yoni David ([@yondav](https://github.com/yondav))
+
+---
+
 # v0.1.3 (Sat May 28 2022)
 
 #### ⚠️ Pushed to `master`

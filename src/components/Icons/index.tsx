@@ -1,4 +1,4 @@
-import { FC, createElement } from 'react';
+import React, { FC, createElement } from 'react';
 import * as icons from './Icons';
 export interface Icons {
   Twitter: 'Twitter';

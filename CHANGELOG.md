@@ -1,3 +1,16 @@
+# v0.1.7 (Tue May 31 2022)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of github.com:new-technologies-group/story-book ([@yondav](https://github.com/yondav))
+- importing react into components for bundle ([@yondav](https://github.com/yondav))
+
+#### Authors: 1
+
+- Yoni David ([@yondav](https://github.com/yondav))
+
+---
+
 # v0.1.6 (Tue May 31 2022)
 
 #### ⚠️ Pushed to `master`

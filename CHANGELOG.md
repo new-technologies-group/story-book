@@ -1,3 +1,15 @@
+# v0.1.10 (Wed Jun 01 2022)
+
+#### ⚠️ Pushed to `master`
+
+- npmignore ([@yondav](https://github.com/yondav))
+
+#### Authors: 1
+
+- Yoni David ([@yondav](https://github.com/yondav))
+
+---
+
 # v0.1.9 (Tue May 31 2022)
 
 #### ⚠️ Pushed to `master`

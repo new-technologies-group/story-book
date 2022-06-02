@@ -10,8 +10,8 @@
     "url": "https://github.com/new-technologies-group/story-book/issues"
   },
   "homepage": "",
-  "main": "dist/cjs/index/.js",
-  "module": "dist/esm/index.es.js",
+  "main": "dist/index/.js",
+  "module": "dist/index.es.js",
   "types": "dist/types/index.d.ts",
   "keywords": [],
   "author": "new technologies group",

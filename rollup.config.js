@@ -1,24 +1,28 @@
 import babel from 'rollup-plugin-babel';
 import resolve from '@rollup/plugin-node-resolve';
-// import external from 'rollup-plugin-peer-deps-external';
+import external from 'rollup-plugin-peer-deps-external';
 import commonjs from 'rollup-plugin-commonjs';
-// import { terser } from 'rollup-plugin-terser';
+import { terser } from 'rollup-plugin-terser';
 import typescript from '@rollup/plugin-typescript';
+
+const packageJson = require('./package.json');
 
 const extensions = ['.js', '.jsx', '.ts', '.tsx'];
 
 export default [
   {
-    input: './src/index.ts',
+    input: 'src/index.ts',
     output: [
       {
-        file: 'dist/index.js',
+        file: packageJson.main,
         format: 'cjs',
+        sourcemap: true,
+        name: 'react-lib',
       },
       {
-        file: 'dist/index.es.js',
-        format: 'es',
-        exports: 'named',
+        file: packageJson.module,
+        format: 'esm',
+        sourcemap: true,
       },
     ],
     plugins: [
@@ -30,7 +34,7 @@ export default [
       resolve({
         extensions,
       }),
-      // external(),
+      external(),
       commonjs({
         ignoreGlobal: true,
         include: /\/node_modules\//,
@@ -39,8 +43,8 @@ export default [
           'react-is': Object.keys(require('react-is')),
         },
       }),
-      // terser(),
-      typescript(),
+      terser(),
+      typescript({ tsconfig: './tsconfig.json' }),
     ],
   },
 ];

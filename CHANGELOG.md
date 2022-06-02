@@ -1,3 +1,15 @@
+# v0.1.28 (Thu Jun 02 2022)
+
+#### ⚠️ Pushed to `master`
+
+- exclude node modules ([@yondav](https://github.com/yondav))
+
+#### Authors: 1
+
+- Yoni David ([@yondav](https://github.com/yondav))
+
+---
+
 # v0.1.27 (Thu Jun 02 2022)
 
 #### ⚠️ Pushed to `master`

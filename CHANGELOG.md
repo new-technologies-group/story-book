@@ -1,3 +1,16 @@
+# v0.1.16 (Thu Jun 02 2022)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of github.com:new-technologies-group/story-book ([@yondav](https://github.com/yondav))
+- debugging react undefined ([@yondav](https://github.com/yondav))
+
+#### Authors: 1
+
+- Yoni David ([@yondav](https://github.com/yondav))
+
+---
+
 # v0.1.15 (Thu Jun 02 2022)
 
 #### ⚠️ Pushed to `master`

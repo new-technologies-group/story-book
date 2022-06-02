@@ -2,7 +2,7 @@ import babel from 'rollup-plugin-babel';
 import resolve from '@rollup/plugin-node-resolve';
 import external from 'rollup-plugin-peer-deps-external';
 import commonjs from 'rollup-plugin-commonjs';
-// import { terser } from 'rollup-plugin-terser';
+import { terser } from 'rollup-plugin-terser';
 import typescript from '@rollup/plugin-typescript';
 
 const extensions = ['.js', '.jsx', '.ts', '.tsx'];
@@ -23,7 +23,7 @@ export default [
     ],
     plugins: [
       babel({
-        // exclude: 'node_modules/**',
+        exclude: 'node_modules/**',
         presets: ['@babel/preset-react'],
         extensions,
       }),
@@ -39,7 +39,7 @@ export default [
           'react-is': Object.keys(require('react-is')),
         },
       }),
-      // terser(),
+      terser(),
       typescript(),
     ],
   },

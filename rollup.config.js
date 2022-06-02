@@ -32,7 +32,7 @@ export default [
       }),
       external(),
       commonjs({
-        ignoreGlobal: true,
+        // ignoreGlobal: true,
         include: /\/node_modules\//,
         namedExports: {
           react: Object.keys(require('react')),

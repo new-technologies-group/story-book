@@ -21,6 +21,6 @@
     // Ensure that Babel can safely transpile files in the TypeScript project
     "jsxImportSource": "@emotion/react" // Add the css prop
   },
-  "include": ["src/**/*.tsx", "types"]
-  // "exclude": ["node_modules", "dist"]
+  "include": ["src/**/*.tsx", "types"],
+  "exclude": ["node_modules", "dist"]
 }

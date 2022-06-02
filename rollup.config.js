@@ -4,6 +4,7 @@ import external from 'rollup-plugin-peer-deps-external';
 import commonjs from 'rollup-plugin-commonjs';
 import { terser } from 'rollup-plugin-terser';
 import typescript from '@rollup/plugin-typescript';
+import dts from 'rollup-plugin-dts';
 
 const packageJson = require('./package.json');
 
@@ -46,5 +47,11 @@ export default [
       terser(),
       typescript({ tsconfig: './tsconfig.json' }),
     ],
+  },
+  {
+    input: 'dist/esm/types/index.d.ts',
+    output: [{ file: 'dist/index.d.ts', format: 'esm' }],
+    external: [/\.css$/],
+    plugins: [dts()],
   },
 ];

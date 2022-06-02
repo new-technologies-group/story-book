@@ -1,4 +1,4 @@
-import { FC, ReactNode } from 'react';
+// import { FC, ReactNode } from 'react';
 import tw, { styled, css } from 'twin.macro';
 import { Icon } from '../Icons';
 
@@ -16,7 +16,7 @@ export const Button = styled.button<ButtonProps>(({ variant = 'text' }) => [
 
 export interface SocialButtonProps extends ButtonProps {
   icon: 'Twitter' | 'Discord' | 'Linkedin' | 'Twitch' | 'Instagram' | 'MagicEden';
-  children: ReactNode;
+  children: any;
   onClick?: () => any;
 }
 
@@ -33,7 +33,7 @@ const SocialBtn = styled(Button)<SocialButtonProps>(({ icon }) => [
     `,
 ]);
 
-export const SocialButton: FC<SocialButtonProps> = ({ icon, children, ...props }) => {
+export const SocialButton = ({ icon, children, ...props }: SocialButtonProps) => {
   return (
     <SocialBtn icon={icon} {...props}>
       <div tw='flex justify-center items-center'>

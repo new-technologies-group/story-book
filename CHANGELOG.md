@@ -1,3 +1,15 @@
+# v0.1.23 (Thu Jun 02 2022)
+
+#### ⚠️ Pushed to `master`
+
+- commonjs config to include globals ([@yondav](https://github.com/yondav))
+
+#### Authors: 1
+
+- Yoni David ([@yondav](https://github.com/yondav))
+
+---
+
 # v0.1.22 (Thu Jun 02 2022)
 
 #### ⚠️ Pushed to `master`

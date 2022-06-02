@@ -1,6 +1,6 @@
-import React, { SVGProps } from 'react';
+import { JSX } from '@emotion/react/jsx-runtime';
 
-export const Twitter = (props: SVGProps<SVGSVGElement>) => {
+export const Twitter = (props: JSX.IntrinsicAttributes) => {
   return (
     <svg
       stroke='currentColor'
@@ -18,7 +18,7 @@ export const Twitter = (props: SVGProps<SVGSVGElement>) => {
   );
 };
 
-export const Discord = (props: SVGProps<SVGSVGElement>) => {
+export const Discord = (props: JSX.IntrinsicAttributes) => {
   return (
     <svg
       stroke='currentColor'
@@ -36,7 +36,7 @@ export const Discord = (props: SVGProps<SVGSVGElement>) => {
   );
 };
 
-export const Instagram = (props: SVGProps<SVGSVGElement>) => {
+export const Instagram = (props: JSX.IntrinsicAttributes) => {
   return (
     <svg
       stroke='currentColor'
@@ -54,7 +54,7 @@ export const Instagram = (props: SVGProps<SVGSVGElement>) => {
   );
 };
 
-export const Linkedin = (props: SVGProps<SVGSVGElement>) => {
+export const Linkedin = (props: JSX.IntrinsicAttributes) => {
   return (
     <svg
       stroke='currentColor'
@@ -72,7 +72,7 @@ export const Linkedin = (props: SVGProps<SVGSVGElement>) => {
   );
 };
 
-export const MagicEden = (props: SVGProps<SVGSVGElement>) => (
+export const MagicEden = (props: JSX.IntrinsicAttributes) => (
   <svg
     width='2.5em'
     height='1em'
@@ -88,7 +88,7 @@ export const MagicEden = (props: SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
-export const Solana = (props: SVGProps<SVGSVGElement>) => (
+export const Solana = (props: JSX.IntrinsicAttributes) => (
   <svg
     xmlns='http://www.w3.org/2000/svg'
     viewBox='0 0 397.7 311.7'
@@ -184,7 +184,7 @@ export const Solana = (props: SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
-export const Twitch = (props: SVGProps<SVGSVGElement>) => {
+export const Twitch = (props: JSX.IntrinsicAttributes) => {
   return (
     <svg
       stroke='currentColor'

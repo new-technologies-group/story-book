@@ -1,4 +1,4 @@
-import React, { FC, createElement } from 'react';
+import React, { createElement, SVGProps } from 'react';
 import * as icons from './Icons';
 export interface Icons {
   Twitter: 'Twitter';
@@ -10,11 +10,11 @@ export interface Icons {
   Solana: 'Solana';
 }
 
-export interface IconProps {
+export interface IconProps extends SVGProps<any> {
   variant: string;
 }
 
-export const Icon: FC<IconProps> = ({ variant, ...props }) => {
+export const Icon = ({ variant, ...props }: IconProps) => {
   if (!variant) return null;
   return createElement(icons[variant as keyof Icons], { ...props });
 };

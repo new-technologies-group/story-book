@@ -2,7 +2,7 @@ import React, { FC, ReactNode } from 'react';
 import tw, { styled, css } from 'twin.macro';
 import { Icon } from '../Icons';
 
-interface ButtonProps {
+export interface ButtonProps {
   variant?: 'primary' | 'secondary' | 'text' | 'outline';
 }
 
@@ -14,7 +14,7 @@ export const Button = styled.button<ButtonProps>(({ variant = 'text' }) => [
   variant === 'outline' && tw`border-2 border-neutral-700`,
 ]);
 
-interface SocialButtonProps extends ButtonProps {
+export interface SocialButtonProps extends ButtonProps {
   icon: 'Twitter' | 'Discord' | 'Linkedin' | 'Twitch' | 'Instagram' | 'MagicEden';
   children: ReactNode;
   onClick?: () => any;

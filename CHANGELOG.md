@@ -1,3 +1,16 @@
+# v0.1.12 (Thu Jun 02 2022)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of github.com:new-technologies-group/story-book ([@yondav](https://github.com/yondav))
+- more explicit types for build ([@yondav](https://github.com/yondav))
+
+#### Authors: 1
+
+- Yoni David ([@yondav](https://github.com/yondav))
+
+---
+
 # v0.1.11 (Wed Jun 01 2022)
 
 #### ⚠️ Pushed to `master`

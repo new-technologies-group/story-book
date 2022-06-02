@@ -12,6 +12,7 @@
   "homepage": "",
   "main": "dist/index/.js",
   "module": "dist/index.es.js",
+  "types": "dist/types/index.d.ts",
   "keywords": [],
   "author": "new technologies group",
   "license": "ISC",

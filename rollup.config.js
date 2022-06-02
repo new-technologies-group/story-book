@@ -23,7 +23,7 @@ export default [
     ],
     plugins: [
       babel({
-        exclude: 'node_modules/**',
+        // exclude: 'node_modules/**',
         presets: ['@babel/preset-react'],
         extensions,
       }),
@@ -38,7 +38,6 @@ export default [
           react: Object.keys(require('react')),
           'react-is': Object.keys(require('react-is')),
         },
-        defaultIsModuleExports: true,
       }),
       terser(),
       typescript(),

@@ -1,3 +1,15 @@
+# v0.1.35 (Fri Jun 03 2022)
+
+#### ⚠️ Pushed to `master`
+
+- image export ([@yondav](https://github.com/yondav))
+
+#### Authors: 1
+
+- Yoni David ([@yondav](https://github.com/yondav))
+
+---
+
 # v0.1.34 (Fri Jun 03 2022)
 
 #### ⚠️ Pushed to `master`

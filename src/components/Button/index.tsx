@@ -7,7 +7,7 @@ export interface ButtonProps {
 }
 
 export const Button = styled.button<ButtonProps>(({ variant = 'text' }) => [
-  tw`m-2 text-neutral-50 font-bold py-4 px-6 rounded-2xl transition-all duration-200 ease-in hover:-translate-y-0.5`,
+  tw`m-2 text-white font-bold py-4 px-6 rounded-2xl transition-all duration-200 ease-in hover:-translate-y-0.5`,
   css`
     background-size: 125% !important;
     &:hover {

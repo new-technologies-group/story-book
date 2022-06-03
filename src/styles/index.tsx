@@ -12,7 +12,7 @@ const CustomStyles: GlobalStyleComponent<{}, DefaultTheme> = createGlobalStyle`
   }
 
   body {
-    ${tw`font-primary font-normal bg-neutral-900 text-gray-100`}
+    ${tw`font-primary font-normal bg-neutral-900 text-white`}
   }
 
   h1 {
@@ -30,7 +30,7 @@ const CustomStyles: GlobalStyleComponent<{}, DefaultTheme> = createGlobalStyle`
   p {}
 
   a {
-    ${tw` text-neutral-50 hover:text-neutral-300 transition-all duration-300 ease-in`}
+    ${tw` text-white hover:text-neutral-300 transition-all duration-300 ease-in`}
     text-decoration: none;
   }
 `;

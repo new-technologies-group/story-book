@@ -17,6 +17,8 @@ export default {
   },
 };
 
-const Template: Story = props => <Nav sticky={false} {...props}></Nav>;
+const Template: Story = props => (
+  <Nav sticky={false} links={[<a>Roadmap</a>]} {...props}></Nav>
+);
 
 export const Usage = Template.bind({});

@@ -46,13 +46,13 @@ export const root = `
     --purple-600: #800eb0;
     --purple-700: #700c9a;
 
-    --cyan-100: #00b2ae;
-    --cyan-200: #00ccc7;
-    --cyan-300: #00e5e0;
+    --cyan-100: #4cfffa;
+    --cyan-200: #32fffa;
+    --cyan-300: #19fff9;
     --cyan-400: #00fff9;
-    --cyan-500: #19fff9;
-    --cyan-600: #32fffa;
-    --cyan-700: #4cfffa;
+    --cyan-500: #00e5e0;
+    --cyan-600: #00ccc7;
+    --cyan-700: #00b2ae;
 
     --pink-100: #f27aa1;
     --pink-200: #f06693;

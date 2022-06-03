@@ -66,7 +66,7 @@ export const Linkedin = (props: JSX.IntrinsicAttributes) => (
 
 export const MagicEden = (props: JSX.IntrinsicAttributes) => (
   <svg
-    width='2.5em'
+    width='2em'
     height='1em'
     viewBox='0 0 68 68'
     fill='none'
@@ -232,7 +232,7 @@ export const SolScan = (props: JSX.IntrinsicAttributes) => (
     >
       <feColorMatrix
         values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0'
-        color-interpolation-filters='sRGB'
+        colorInterpolationFilters='sRGB'
       />
     </filter>
     <filter
@@ -249,12 +249,12 @@ export const SolScan = (props: JSX.IntrinsicAttributes) => (
     >
       <feColorMatrix
         values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0.2126 0.7152 0.0722 0 0'
-        color-interpolation-filters='sRGB'
+        colorInterpolationFilters='sRGB'
       />
     </filter>
 
-    <g xmlns='http://www.w3.org/2000/svg' clip-path='url(#id36)'>
-      <g clip-path='url(#id37)'>
+    <g xmlns='http://www.w3.org/2000/svg' clipPath='url(#id36)'>
+      <g clipPath='url(#id37)'>
         <g mask='url(#id38)'>
           <g transform='matrix(0.425557, 0, 0, 0.425207, 1097.354123, 744.503801)'>
             <image
@@ -276,13 +276,13 @@ export const SolScan = (props: JSX.IntrinsicAttributes) => (
     <clipPath xmlns='http://www.w3.org/2000/svg' id='id36'>
       <path
         d='M 1097.566406 745 L 1231.507812 745 L 1231.507812 878 L 1097.566406 878 Z M 1097.566406 745 '
-        clip-rule='nonzero'
+        clipRule='nonzero'
       />
     </clipPath>
     <clipPath xmlns='http://www.w3.org/2000/svg' id='id37'>
       <path
         d='M 1231.507812 811.472656 C 1231.507812 848.460938 1201.523438 878.445312 1164.535156 878.445312 C 1127.550781 878.445312 1097.566406 848.460938 1097.566406 811.472656 C 1097.566406 774.488281 1127.550781 744.503906 1164.535156 744.503906 C 1201.523438 744.503906 1231.507812 774.488281 1231.507812 811.472656 Z M 1231.507812 811.472656 '
-        clip-rule='nonzero'
+        clipRule='nonzero'
       />
     </clipPath>
     <mask xmlns='http://www.w3.org/2000/svg' id='id38'>

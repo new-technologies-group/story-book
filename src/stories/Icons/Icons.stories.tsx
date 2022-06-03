@@ -23,6 +23,7 @@ export default {
           'OpenSea',
           'SolScan',
           'YouTube',
+          'Wallet',
         ],
       },
     },

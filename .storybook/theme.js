@@ -33,5 +33,5 @@ export default create({
 
   brandTitle: 'Magnum AI',
   brandUrl: 'https://magnumai.io',
-  brandImage: 'https://www.magnumai.io/logo-small.6417fbc2.png',
+  brandImage: require('../src/assets/brand.png'),
 });

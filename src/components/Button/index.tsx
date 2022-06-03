@@ -7,7 +7,7 @@ export interface ButtonProps {
 }
 
 export const Button = styled.button<ButtonProps>(({ variant = 'text' }) => [
-  tw`m-2 text-neutral-50 font-bold py-4 px-6 rounded-full transition-all duration-75 ease-in`,
+  tw`m-2 text-neutral-50 font-bold py-4 px-6 rounded-2xl transition-all duration-75 ease-in`,
   css`
     background-size: 125% !important;
     &:hover {
@@ -19,7 +19,7 @@ export const Button = styled.button<ButtonProps>(({ variant = 'text' }) => [
     tw`bg-gradient-to-b from-purple-100 to-purple-600 hover:(bg-gradient-to-b from-purple-200 to-purple-500)`,
   variant === 'secondary' &&
     tw`bg-gradient-to-b from-neutral-600 to-neutral-800 hover:(bg-gradient-to-b from-neutral-700 to-neutral-900)`,
-  variant === 'outline' && tw`border-2 border-neutral-700 hover:border-neutral-600`,
+  variant === 'outline' && tw`border border-neutral-700 hover:border-neutral-600`,
   variant === 'text' && tw`hover:text-neutral-300`,
 ]);
 
@@ -91,5 +91,13 @@ export const SocialButton: FC<SocialButtonProps> = ({ icon, children, ...props }
         <Icon variant={icon as string} tw='ml-2' />
       </div>
     </SocialBtn>
+  );
+};
+
+export const WalletButton = (props: any) => {
+  return (
+    <Button variant='outline' tw='p-2 rounded-md' {...props}>
+      <Icon variant='Wallet' />
+    </Button>
   );
 };

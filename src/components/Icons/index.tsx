@@ -11,6 +11,7 @@ export interface Icons {
   OpenSea: 'OpenSea';
   SolScan: 'SolScan';
   YouTube: 'YouTube';
+  Wallet: 'Wallet';
 }
 export interface IconProps extends SVGProps<any> {
   variant: string;

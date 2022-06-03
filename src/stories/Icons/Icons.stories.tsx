@@ -22,6 +22,7 @@ export default {
           'Solana',
           'OpenSea',
           'SolScan',
+          'YouTube',
         ],
       },
     },

@@ -31,7 +31,8 @@ export interface SocialButtonProps extends ButtonProps {
     | 'Twitch'
     | 'Instagram'
     | 'MagicEden'
-    | 'OpenSea';
+    | 'OpenSea'
+    | 'YouTube';
   children: ReactNode;
   onClick?: () => any;
 }
@@ -75,6 +76,10 @@ const SocialBtn = styled(Button)<SocialButtonProps>(({ icon }) => [
   icon === 'OpenSea' &&
     css`
       background: linear-gradient(135deg, #1868b7, #15b2e5);
+    `,
+  icon === 'YouTube' &&
+    css`
+      background: linear-gradient(135deg, #ff0000, #c50505);
     `,
 ]);
 

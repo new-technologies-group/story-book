@@ -20,6 +20,7 @@ export default {
           'Instagram',
           'MagicEden',
           'OpenSea',
+          'YouTube',
         ],
       },
     },

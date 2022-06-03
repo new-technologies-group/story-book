@@ -3,7 +3,7 @@ import tw, { styled } from 'twin.macro';
 import { Icon } from '../Icons';
 
 const FooterBase = styled.footer`
-  ${tw`w-full py-2 px-4 border-t border-neutral-700 absolute bg-neutral-900 bottom-0 left-0 flex flex-col justify-center items-center`}
+  ${tw`w-full py-2 px-4 border-t border-neutral-700 fixed bg-neutral-900 bottom-0 left-0 flex flex-col justify-center items-center`}
 `;
 
 export const Footer = () => (

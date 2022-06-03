@@ -1,3 +1,16 @@
+# v0.1.43 (Fri Jun 03 2022)
+
+#### ⚠️ Pushed to `master`
+
+- no props needed for footer ([@yondav](https://github.com/yondav))
+- footer component ([@yondav](https://github.com/yondav))
+
+#### Authors: 1
+
+- Yoni David ([@yondav](https://github.com/yondav))
+
+---
+
 # v0.1.42 (Fri Jun 03 2022)
 
 #### ⚠️ Pushed to `master`

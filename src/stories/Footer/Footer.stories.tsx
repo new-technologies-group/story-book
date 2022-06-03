@@ -8,6 +8,6 @@ export default {
   argTypes: {},
 };
 
-const Template: Story = props => <Footer />;
+const Template: Story = () => <Footer />;
 
 export const Usage = Template.bind({});

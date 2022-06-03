@@ -1,3 +1,15 @@
+# v0.1.32 (Fri Jun 03 2022)
+
+#### ⚠️ Pushed to `master`
+
+- you tube icon and social button ([@yondav](https://github.com/yondav))
+
+#### Authors: 1
+
+- Yoni David ([@yondav](https://github.com/yondav))
+
+---
+
 # v0.1.31 (Fri Jun 03 2022)
 
 #### ⚠️ Pushed to `master`

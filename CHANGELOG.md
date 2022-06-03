@@ -1,3 +1,15 @@
+# v0.1.39 (Fri Jun 03 2022)
+
+#### ⚠️ Pushed to `master`
+
+- updated color pallet and nav component ([@yondav](https://github.com/yondav))
+
+#### Authors: 1
+
+- Yoni David ([@yondav](https://github.com/yondav))
+
+---
+
 # v0.1.38 (Fri Jun 03 2022)
 
 #### ⚠️ Pushed to `master`

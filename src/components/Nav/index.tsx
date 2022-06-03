@@ -15,12 +15,12 @@ export interface SideNavProps {
 }
 
 const Base = styled.nav<BaseNavProps>(({ sticky }) => [
-  tw`fixed top-0 left-0 py-2 px-4 w-screen font-primary bg-neutral-900 text-base font-light text-white transition-all border-b border-neutral-700 flex justify-between items-end z-20`,
+  tw`fixed top-0 left-0 py-2 px-4 w-screen font-primary bg-neutral-900 text-base font-light text-white transition-all border-b border-neutral-700 flex justify-between items-center z-20`,
   sticky && tw`fixed top-0`,
 ]);
 
 const SideNav = styled.div<SideNavProps>(({ active }) => [
-  tw`fixed bottom-0 right-[-100%] w-full md:w-1/2 lg:w-1/3 bg-neutral-900 border-l border-neutral-700 transition-all duration-300 ease-linear flex flex-col justify-between`,
+  tw`fixed bottom-0 right-[-100%] w-full md:w-1/2 lg:w-1/3 bg-neutral-900 border-l border-neutral-700 transition-all duration-300 ease-linear flex flex-col justify-between z-10`,
   active && tw`right-0`,
 
   css`

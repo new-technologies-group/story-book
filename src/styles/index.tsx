@@ -1,9 +1,10 @@
+import { EmotionJSX } from '@emotion/react/types/jsx-namespace';
 import React from 'react';
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle, DefaultTheme, GlobalStyleComponent } from 'styled-components';
 import tw, { GlobalStyles as BaseStyles } from 'twin.macro';
 import { root } from './styles.variables';
 
-const CustomStyles = createGlobalStyle`
+const CustomStyles: GlobalStyleComponent<{}, DefaultTheme> = createGlobalStyle`
   :root { ${root} }
 
   html {
@@ -34,11 +35,9 @@ const CustomStyles = createGlobalStyle`
   }
 `;
 
-const GlobalStyles = () => (
+export const GlobalStyles: () => EmotionJSX.Element = () => (
   <>
     <BaseStyles />
     <CustomStyles />
   </>
 );
-
-export default GlobalStyles;

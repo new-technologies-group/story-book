@@ -1,5 +1,5 @@
 import React from 'react';
-import GlobalStyles from './../src/styles';
+import { GlobalStyles } from './../src/styles';
 import { theme } from 'twin.macro';
 import myTheme from './theme';
 

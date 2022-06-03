@@ -22,6 +22,7 @@ const Hamburger = ({ active }: { active: boolean }) => (
       rx='1.26'
       ry='1.26'
       transform={active ? 'translate(12 -4.97) rotate(45)' : ''}
+      tw='transition-all duration-300 ease-linear'
     />
     <rect
       fill='var(--neutral-50)'
@@ -32,6 +33,7 @@ const Hamburger = ({ active }: { active: boolean }) => (
       rx='1.26'
       ry='1.26'
       transform={active ? 'translate(-4.97 12) rotate(-45)' : ''}
+      tw='transition-all duration-300 ease-linear'
     />
   </svg>
 );
@@ -47,7 +49,7 @@ export const Nav = ({ sticky }: NavProps) => {
       <div>
         <Button
           variant='outline'
-          tw='p-2 rounded-md'
+          tw='p-2 rounded-md hover:translate-y-0'
           onClick={() => setActiveBurger(!activeBurger)}
         >
           <Hamburger active={activeBurger} />

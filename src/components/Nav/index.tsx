@@ -1,4 +1,4 @@
-import React, { FC, ReactNode, useState, useRef, useEffect } from 'react';
+import React, { FC, useState, useRef, useEffect } from 'react';
 import tw, { styled, css } from 'twin.macro';
 import { Button } from '../Button';
 import { Icon } from '../Icons';

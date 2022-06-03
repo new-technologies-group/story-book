@@ -26,8 +26,6 @@ module.exports = {
           500: 'var(--red-500)',
           600: 'var(--red-600)',
           700: 'var(--red-700)',
-          800: 'var(--red-800)',
-          900: 'var(--red-900)',
         },
         yellow: {
           100: 'var(--yellow-100)',
@@ -37,8 +35,15 @@ module.exports = {
           500: 'var(--yellow-500)',
           600: 'var(--yellow-600)',
           700: 'var(--yellow-700)',
-          800: 'var(--yellow-800)',
-          900: 'var(--yellow-900)',
+        },
+        green: {
+          100: 'var(--green-100)',
+          200: 'var(--green-200)',
+          300: 'var(--green-300)',
+          400: 'var(--green-400)',
+          500: 'var(--green-500)',
+          600: 'var(--green-600)',
+          700: 'var(--green-700)',
         },
         purple: {
           100: 'var(--purple-100)',
@@ -48,8 +53,6 @@ module.exports = {
           500: 'var(--purple-500)',
           600: 'var(--purple-600)',
           700: 'var(--purple-700)',
-          800: 'var(--purple-800)',
-          900: 'var(--purple-900)',
         },
         cyan: {
           100: 'var(--cyan-100)',
@@ -59,8 +62,6 @@ module.exports = {
           500: 'var(--cyan-500)',
           600: 'var(--cyan-600)',
           700: 'var(--cyan-700)',
-          800: 'var(--cyan-800)',
-          900: 'var(--cyan-900)',
         },
         pink: {
           100: 'var(--pink-100)',
@@ -70,15 +71,6 @@ module.exports = {
           500: 'var(--pink-500)',
           600: 'var(--pink-600)',
           700: 'var(--pink-700)',
-          800: 'var(--pink-800)',
-          900: 'var(--pink-900)',
-        },
-        social: {
-          discord: 'var(--discord)',
-          twitter: 'var(--twitter)',
-          linkedin: 'var(--linkedin)',
-          instagram: 'var(--instagram)',
-          twitch: 'var(--twitch)',
         },
         solana: {
           green: 'var(--sol-green)',

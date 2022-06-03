@@ -60,7 +60,7 @@ export const root = `
     --pink-400: #ed4179;
     --pink-500: #d53a6c;
     --pink-600: #bd3460;
-    --pink-700: #bd3460;
+    --pink-700: #a52d54;
 
     # solana colors;
     --sol-green: #00ffa3;

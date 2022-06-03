@@ -25,9 +25,9 @@ const SideNav = styled.div<SideNavProps>(({ active }) => [
 
   css`
     & ul {
-      ${tw`mx-auto text-center`}
+      ${tw`w-full mx-auto text-center`}
       & li {
-        ${tw`p-5 cursor-pointer border-b border-neutral-700 hover:(bg-neutral-700 text-neutral-900)`}
+        ${tw`w-full p-5 cursor-pointer border-b border-neutral-700 hover:(bg-neutral-700 text-neutral-900) transition-all duration-200 ease-linear`}
       }
     }
   `,
@@ -95,21 +95,56 @@ export const Nav: FC<NavProps> = ({ sticky, links }) => {
             <li key={i}>{link}</li>
           ))}
         </ul>
-        <div>
-          <a href='http://' target='_blank' rel='noopener noreferrer'>
-            <Icon variant='Discord' />
+        <div tw='md:ml-auto w-1/2 flex justify-around'>
+          <a
+            href='https://discord.gg/tUDWfAhxaR'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <Icon
+              variant='Discord'
+              tw='hover:text-[#5865f2] transition-all duration-200 ease-in'
+            />
           </a>
-          <a href='http://' target='_blank' rel='noopener noreferrer'>
-            <Icon variant='Twitter' />
+          <a
+            href='https://twitter.com/_MagnumAI'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <Icon
+              variant='Twitter'
+              tw='hover:text-[#1da1f2] transition-all duration-200 ease-in'
+            />
           </a>
-          <a href='http://' target='_blank' rel='noopener noreferrer'>
-            <Icon variant='YouTube' />
+          <a
+            href='https://www.youtube.com/channel/UCO0kMjGg9Gan6hDAUugILgg'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <Icon
+              variant='YouTube'
+              tw='hover:text-[#ff0000] transition-all duration-200 ease-in'
+            />
           </a>
-          <a href='http://' target='_blank' rel='noopener noreferrer'>
-            <Icon variant='MagicEden' />
+          <a
+            href='https://magiceden.io/marketplace/magnum_ai'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <Icon
+              variant='MagicEden'
+              tw='hover:text-[#f94e9b] transition-all duration-200 ease-in'
+            />
           </a>
-          <a href='http://' target='_blank' rel='noopener noreferrer'>
-            <Icon variant='OpenSea' />
+          <a
+            href='https://opensea.io/collection/magnum-ai'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <Icon
+              variant='OpenSea'
+              tw='hover:text-[#15b2e5] transition-all duration-200 ease-in'
+            />
           </a>
         </div>
       </SideNav>

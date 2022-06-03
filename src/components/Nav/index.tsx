@@ -42,7 +42,7 @@ export const Nav = ({ sticky }: NavProps) => {
   return (
     <Base sticky={sticky}>
       <div tw='w-1/2 md:w-1/3 lg:w-1/5 xl:w-1/6'>
-        <img src={require('../../assets/brand.png')} alt='magnum' />
+        <img src='https://magnum-images.s3.amazonaws.com/brand/brand.png' alt='magnum' />
       </div>
       <div>
         <Button

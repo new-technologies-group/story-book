@@ -1,3 +1,15 @@
+# v0.1.41 (Fri Jun 03 2022)
+
+#### ⚠️ Pushed to `master`
+
+- cyan order ([@yondav](https://github.com/yondav))
+
+#### Authors: 1
+
+- Yoni David ([@yondav](https://github.com/yondav))
+
+---
+
 # v0.1.40 (Fri Jun 03 2022)
 
 #### ⚠️ Pushed to `master`

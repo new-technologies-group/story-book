@@ -1,3 +1,15 @@
+# v0.1.44 (Fri Jun 03 2022)
+
+#### ⚠️ Pushed to `master`
+
+- export of Footer component and height calculation for side nav ([@yondav](https://github.com/yondav))
+
+#### Authors: 1
+
+- Yoni David ([@yondav](https://github.com/yondav))
+
+---
+
 # v0.1.43 (Fri Jun 03 2022)
 
 #### ⚠️ Pushed to `master`

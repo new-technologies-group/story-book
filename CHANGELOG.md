@@ -1,3 +1,15 @@
+# v0.1.29 (Fri Jun 03 2022)
+
+#### ⚠️ Pushed to `master`
+
+- styled components to dev dependencies and globalstyles generic export ([@yondav](https://github.com/yondav))
+
+#### Authors: 1
+
+- Yoni David ([@yondav](https://github.com/yondav))
+
+---
+
 # v0.1.28 (Thu Jun 02 2022)
 
 #### ⚠️ Pushed to `master`

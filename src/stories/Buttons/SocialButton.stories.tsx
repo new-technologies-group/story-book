@@ -12,7 +12,15 @@ export default {
       },
       control: {
         type: 'select',
-        options: ['Twitter', 'Discord', 'Linkedin', 'Twitch', 'Instagram', 'MagicEden'],
+        options: [
+          'Twitter',
+          'Discord',
+          'Linkedin',
+          'Twitch',
+          'Instagram',
+          'MagicEden',
+          'OpenSea',
+        ],
       },
     },
     variant: {

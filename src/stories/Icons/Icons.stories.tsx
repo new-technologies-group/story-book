@@ -20,6 +20,8 @@ export default {
           'Twitch',
           'MagicEden',
           'Solana',
+          'OpenSea',
+          'SolScan',
         ],
       },
     },

@@ -8,6 +8,8 @@ export interface Icons {
   Twitch: 'Twitch';
   MagicEden: 'MagicEden';
   Solana: 'Solana';
+  OpenSea: 'OpenSea';
+  SolScan: 'SolScan';
 }
 
 export interface IconProps extends SVGProps<any> {

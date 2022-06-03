@@ -7,29 +7,74 @@ export interface ButtonProps {
 }
 
 export const Button = styled.button<ButtonProps>(({ variant = 'text' }) => [
-  tw`m-2 text-neutral-50 font-bold p-4 rounded-lg hover:scale-105 transition-all`,
+  tw`m-2 text-neutral-50 font-bold py-4 px-6 rounded-full transition-all duration-75 ease-in`,
+  css`
+    background-size: 125% !important;
+    &:hover {
+      background-size: 100% !important;
+    }
+  `,
 
-  variant === 'primary' && tw`bg-gradient-to-b from-purple-100 to-purple-600`,
-  variant === 'secondary' && tw`bg-neutral-700`,
-  variant === 'outline' && tw`border-2 border-neutral-700`,
+  variant === 'primary' &&
+    tw`bg-gradient-to-b from-purple-100 to-purple-600 hover:(bg-gradient-to-b from-purple-200 to-purple-500)`,
+  variant === 'secondary' &&
+    tw`bg-gradient-to-b from-neutral-600 to-neutral-800 hover:(bg-gradient-to-b from-neutral-700 to-neutral-900)`,
+  variant === 'outline' && tw`border-2 border-neutral-700 hover:border-neutral-600`,
+  variant === 'text' && tw`hover:text-neutral-300`,
 ]);
 
 export interface SocialButtonProps extends ButtonProps {
-  icon: 'Twitter' | 'Discord' | 'Linkedin' | 'Twitch' | 'Instagram' | 'MagicEden';
+  icon:
+    | 'Twitter'
+    | 'Discord'
+    | 'Linkedin'
+    | 'Twitch'
+    | 'Instagram'
+    | 'MagicEden'
+    | 'OpenSea';
   children: ReactNode;
   onClick?: () => any;
 }
 
 const SocialBtn = styled(Button)<SocialButtonProps>(({ icon }) => [
-  tw`flex justify-center items-center`,
-  icon === 'Twitter' && tw`bg-social-twitter`,
-  icon === 'Discord' && tw`bg-social-discord`,
-  icon === 'Linkedin' && tw`bg-social-linkedin`,
-  icon === 'Twitch' && tw`bg-social-twitch`,
-  icon === 'Instagram' && tw`bg-social-instagram`,
+  tw`flex justify-center items-center hover:text-current`,
+  icon === 'Twitter' &&
+    css`
+      background: linear-gradient(135deg, #1da1f2, #0c81c9);
+    `,
+  ,
+  icon === 'Discord' &&
+    css`
+      background: linear-gradient(135deg, #5865f2, #3443ef);
+    `,
+  icon === 'Linkedin' &&
+    css`
+      background: linear-gradient(135deg, #0077b5, #139cde);
+    `,
+  ,
+  icon === 'Twitch' &&
+    css`
+      background: linear-gradient(135deg, #9146ff, #6441a5);
+    `,
+  ,
+  icon === 'Instagram' &&
+    css`
+      background: linear-gradient(
+        135deg,
+        #285aeb 0%,
+        #d6249f 5%,
+        #fd5949 65%,
+        #fdf497 95%,
+        #fdf497 99%
+      );
+    `,
   icon === 'MagicEden' &&
     css`
       background: linear-gradient(135deg, #900ce9, #f94e9b);
+    `,
+  icon === 'OpenSea' &&
+    css`
+      background: linear-gradient(135deg, #1868b7, #15b2e5);
     `,
 ]);
 

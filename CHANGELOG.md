@@ -1,3 +1,15 @@
+# v0.1.53 (Sat Jun 04 2022)
+
+#### ⚠️ Pushed to `master`
+
+- footer spacing ([@yondav](https://github.com/yondav))
+
+#### Authors: 1
+
+- Yoni David ([@yondav](https://github.com/yondav))
+
+---
+
 # v0.1.52 (Sat Jun 04 2022)
 
 #### ⚠️ Pushed to `master`

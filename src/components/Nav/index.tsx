@@ -3,7 +3,7 @@ import tw, { styled, css } from 'twin.macro';
 import { Button } from '../Button';
 import { Icon } from '../Icons';
 
-export interface NavProps extends BaseNavProps {
+export interface NavProps {
   links: JSX.Element[];
 }
 export interface BaseNavProps {
@@ -60,10 +60,11 @@ const Hamburger = ({ active }: SideNavProps) => (
   </svg>
 );
 
-export const Nav: FC<NavProps> = ({ sticky, links }) => {
+export const Nav: FC<NavProps> = ({ links }) => {
   const navRef = useRef<HTMLElement | null>(null);
   const [activeBurger, setActiveBurger] = useState<boolean>(false);
   const [height, setHeight] = useState<number>(0);
+  const [sticky, setSticky] = useState(false);
 
   useEffect(() => {
     const navHeightSetter = () => {
@@ -74,7 +75,15 @@ export const Nav: FC<NavProps> = ({ sticky, links }) => {
     navHeightSetter();
   }, [navRef]);
 
-  useEffect(() => console.log(height), [height]);
+  useEffect(() => {
+    const scrollHandler = () => {
+      if (window.scrollY > height || window.scrollY > 80) setSticky(true);
+      else setSticky(false);
+    };
+    window.addEventListener('scroll', scrollHandler);
+    return () => window.removeEventListener('scroll', scrollHandler);
+  });
+
   return (
     <Base ref={navRef} sticky={sticky}>
       <div tw='w-1/2 md:w-1/3 lg:w-1/5 xl:w-1/6'>

@@ -1,3 +1,15 @@
+# v0.1.47 (Sat Jun 04 2022)
+
+#### ⚠️ Pushed to `master`
+
+- no position needed for footer ([@yondav](https://github.com/yondav))
+
+#### Authors: 1
+
+- Yoni David ([@yondav](https://github.com/yondav))
+
+---
+
 # v0.1.46 (Fri Jun 03 2022)
 
 #### ⚠️ Pushed to `master`

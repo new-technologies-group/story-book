@@ -19,6 +19,11 @@ const Base = styled.nav<BaseNavProps>(({ sticky }) => [
   sticky && tw`fixed top-0 left-0`,
 ]);
 
+const Overlay = styled.div<SideNavProps>(({ active }) => [
+  active &&
+    tw`fixed w-full h-full bg-[rgba(0,0,0,.5)] transition-all duration-300 ease-linear`,
+]);
+
 const SideNav = styled.div<SideNavProps>(({ active }) => [
   tw`fixed bottom-0 right-[-100%] w-full md:w-1/2 lg:w-1/3 bg-neutral-900 border-l border-neutral-700 transition-all duration-300 ease-linear flex flex-col justify-between z-10`,
   active && tw`right-0`,
@@ -177,12 +182,7 @@ export const Nav: FC<NavProps> = ({ links }) => {
           </div>
         </SideNav>
       </Base>
-      {activeBurger && (
-        <div
-          tw='fixed w-full h-full bg-[rgba(0,0,0,.5)]'
-          onClick={() => setActiveBurger(false)}
-        />
-      )}
+      <Overlay active={activeBurger} onClick={() => setActiveBurger(false)} />
     </>
   );
 };

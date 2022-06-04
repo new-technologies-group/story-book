@@ -47,7 +47,7 @@ export const CheckBox = React.forwardRef<HTMLInputElement>((props, checkRef) => 
 });
 
 export const Group = styled.div`
-  ${tw`m-3 flex flex-col`}
+  ${tw`mx-3 my-5 flex flex-col`}
 `;
 export const Label = styled.label`
   ${tw`mb-1`}

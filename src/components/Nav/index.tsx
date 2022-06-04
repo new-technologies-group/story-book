@@ -15,7 +15,7 @@ export interface SideNavProps {
 }
 
 const Base = styled.nav<BaseNavProps>(({ sticky }) => [
-  tw`max-h-20 py-2 px-4 w-screen font-primary bg-neutral-900 text-base font-light text-white transition-all border-b border-neutral-700 flex justify-between items-center z-20`,
+  tw`max-h-20 py-2 px-4 w-screen font-primary bg-neutral-900 text-base font-light text-white transition-all duration-300 ease-linear border-b border-neutral-700 flex justify-between items-center z-20`,
   sticky && tw`fixed top-0 left-0`,
 ]);
 

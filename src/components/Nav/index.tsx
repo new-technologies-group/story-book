@@ -62,6 +62,7 @@ const Hamburger = ({ active }: SideNavProps) => (
 
 export const Nav: FC<NavProps> = ({ links }) => {
   const navRef = useRef<HTMLElement | null>(null);
+  const sideRef = useRef() as React.MutableRefObject<HTMLDivElement>;
   const [activeBurger, setActiveBurger] = useState<boolean>(false);
   const [height, setHeight] = useState<number>(0);
   const [sticky, setSticky] = useState(false);
@@ -85,83 +86,103 @@ export const Nav: FC<NavProps> = ({ links }) => {
   });
 
   return (
-    <Base ref={navRef} sticky={sticky}>
-      <div tw='w-1/2 md:w-1/3 lg:w-1/5 xl:w-1/6'>
-        <img src='https://magnum-images.s3.amazonaws.com/brand/brand.png' alt='magnum' />
-      </div>
-      <div>
-        <Button
-          variant='outline'
-          tw='p-2 rounded-md hover:translate-y-0'
-          onClick={() => setActiveBurger(!activeBurger)}
-        >
-          <Hamburger active={activeBurger} />
-        </Button>
-      </div>
-      <SideNav
-        active={activeBurger}
-        style={{
-          height: height !== 0 ? `calc(100vh - ${height}px)` : 'calc(100vh - 5rem)',
-        }}
-      >
-        <ul>
-          {links.map((link, i) => (
-            <li key={i}>{link}</li>
-          ))}
-        </ul>
-        <div tw='md:ml-auto w-1/2 flex justify-around'>
-          <a
-            href='https://discord.gg/tUDWfAhxaR'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            <Icon
-              variant='Discord'
-              tw='hover:text-[#5865f2] transition-all duration-200 ease-in'
-            />
-          </a>
-          <a
-            href='https://twitter.com/_MagnumAI'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            <Icon
-              variant='Twitter'
-              tw='hover:text-[#1da1f2] transition-all duration-200 ease-in'
-            />
-          </a>
-          <a
-            href='https://www.youtube.com/channel/UCO0kMjGg9Gan6hDAUugILgg'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            <Icon
-              variant='YouTube'
-              tw='hover:text-[#ff0000] transition-all duration-200 ease-in'
-            />
-          </a>
-          <a
-            href='https://magiceden.io/marketplace/magnum_ai'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            <Icon
-              variant='MagicEden'
-              tw='hover:text-[#f94e9b] transition-all duration-200 ease-in'
-            />
-          </a>
-          <a
-            href='https://opensea.io/collection/magnum-ai'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            <Icon
-              variant='OpenSea'
-              tw='hover:text-[#15b2e5] transition-all duration-200 ease-in'
-            />
-          </a>
+    <>
+      <Base ref={navRef} sticky={sticky}>
+        <div tw='w-1/2 md:w-1/3 lg:w-1/5 xl:w-1/6'>
+          <img
+            src='https://magnum-images.s3.amazonaws.com/brand/brand.png'
+            alt='magnum'
+          />
         </div>
-      </SideNav>
-    </Base>
+        <div>
+          <Button
+            variant='outline'
+            tw='p-2 rounded-md hover:translate-y-0'
+            onClick={() => {
+              setActiveBurger(!activeBurger);
+              if (activeBurger) sideRef.current.focus();
+            }}
+          >
+            <Hamburger active={activeBurger} />
+          </Button>
+        </div>
+        <SideNav
+          ref={sideRef}
+          active={activeBurger}
+          style={{
+            height: height !== 0 ? `calc(100vh - ${height}px)` : 'calc(100vh - 5rem)',
+          }}
+          onBlur={e =>
+            !e.currentTarget.contains(e.relatedTarget) && setActiveBurger(false)
+          }
+        >
+          <ul>
+            {links.map((link, i) => (
+              <li key={i} onClick={() => setActiveBurger(false)}>
+                {link}
+              </li>
+            ))}
+          </ul>
+          <div tw='md:ml-auto w-1/2 flex justify-around'>
+            <a
+              href='https://discord.gg/tUDWfAhxaR'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <Icon
+                variant='Discord'
+                tw='hover:text-[#5865f2] transition-all duration-200 ease-in'
+              />
+            </a>
+            <a
+              href='https://twitter.com/_MagnumAI'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <Icon
+                variant='Twitter'
+                tw='hover:text-[#1da1f2] transition-all duration-200 ease-in'
+              />
+            </a>
+            <a
+              href='https://www.youtube.com/channel/UCO0kMjGg9Gan6hDAUugILgg'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <Icon
+                variant='YouTube'
+                tw='hover:text-[#ff0000] transition-all duration-200 ease-in'
+              />
+            </a>
+            <a
+              href='https://magiceden.io/marketplace/magnum_ai'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <Icon
+                variant='MagicEden'
+                tw='hover:text-[#f94e9b] transition-all duration-200 ease-in'
+              />
+            </a>
+            <a
+              href='https://opensea.io/collection/magnum-ai'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <Icon
+                variant='OpenSea'
+                tw='hover:text-[#15b2e5] transition-all duration-200 ease-in'
+              />
+            </a>
+          </div>
+        </SideNav>
+      </Base>
+      {activeBurger && (
+        <div
+          tw='fixed w-full h-full bg-[rgba(0,0,0,.5)]'
+          onClick={() => setActiveBurger(false)}
+        />
+      )}
+    </>
   );
 };

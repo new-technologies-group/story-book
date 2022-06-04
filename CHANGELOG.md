@@ -1,3 +1,15 @@
+# v0.1.48 (Sat Jun 04 2022)
+
+#### ⚠️ Pushed to `master`
+
+- sticky nav ([@yondav](https://github.com/yondav))
+
+#### Authors: 1
+
+- Yoni David ([@yondav](https://github.com/yondav))
+
+---
+
 # v0.1.47 (Sat Jun 04 2022)
 
 #### ⚠️ Pushed to `master`

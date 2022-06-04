@@ -1,3 +1,15 @@
+# v0.1.61 (Sat Jun 04 2022)
+
+#### ⚠️ Pushed to `master`
+
+- cursor on checkbox ([@yondav](https://github.com/yondav))
+
+#### Authors: 1
+
+- Yoni David ([@yondav](https://github.com/yondav))
+
+---
+
 # v0.1.60 (Sat Jun 04 2022)
 
 #### ⚠️ Pushed to `master`

@@ -3,13 +3,13 @@ import tw, { styled } from 'twin.macro';
 import { Icon } from '../Icons';
 
 const FooterBase = styled.footer`
-  ${tw`w-full py-2 px-4 border-t border-neutral-700 bg-neutral-900 flex flex-col justify-center items-center`}
+  ${tw`w-full pt-4 pb-2 px-4 border-t border-neutral-700 bg-neutral-900 flex flex-col justify-center items-center`}
 `;
 
 export const Footer = () => (
   <FooterBase>
     <p tw='whitespace-nowrap text-sm'>&#169; {new Date().getFullYear()} Magnum Ai</p>
-    <div tw='flex mt-3'>
+    <div tw='flex mt-4'>
       <a href='https://discord.gg/tUDWfAhxaR' target='_blank' rel='noopener noreferrer'>
         <Icon
           variant='Discord'

@@ -1,3 +1,15 @@
+# v0.1.51 (Sat Jun 04 2022)
+
+#### ⚠️ Pushed to `master`
+
+- sidenav close ([@yondav](https://github.com/yondav))
+
+#### Authors: 1
+
+- Yoni David ([@yondav](https://github.com/yondav))
+
+---
+
 # v0.1.50 (Sat Jun 04 2022)
 
 #### ⚠️ Pushed to `master`

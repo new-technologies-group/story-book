@@ -1,3 +1,15 @@
+# v0.1.69 (Sun Jun 05 2022)
+
+#### ⚠️ Pushed to `master`
+
+- modal height ([@yondav](https://github.com/yondav))
+
+#### Authors: 1
+
+- Yoni David ([@yondav](https://github.com/yondav))
+
+---
+
 # v0.1.68 (Sun Jun 05 2022)
 
 #### ⚠️ Pushed to `master`

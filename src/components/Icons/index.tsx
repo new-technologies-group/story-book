@@ -13,6 +13,8 @@ export interface Icons {
   YouTube: 'YouTube';
   Wallet: 'Wallet';
   Close: 'Close';
+  Add: 'Add';
+  Subtract: 'Subtract';
 }
 export interface IconProps extends SVGProps<any> {
   variant: string;

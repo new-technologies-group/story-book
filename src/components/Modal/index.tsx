@@ -3,11 +3,11 @@ import tw, { styled } from 'twin.macro';
 import { Icon } from '../Icons';
 
 const ModalContainer = styled.div`
-  ${tw`flex justify-center items-center overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none bg-[rgba(255,255,255,.1)]`}
+  ${tw`flex justify-center items-center overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none bg-[rgba(25,25,25,.5)]`}
 `;
 
 const InnerModalContainer = styled.div`
-  ${tw`relative w-auto my-6 mx-auto max-w-3xl`}
+  ${tw`relative w-auto h-auto my-6 mx-auto max-w-3xl max-h-[90vh] overflow-y-scroll`}
 `;
 
 const ModalContentContainer = styled.div`

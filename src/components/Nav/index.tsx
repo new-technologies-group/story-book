@@ -32,7 +32,7 @@ const SideNav = styled.div<SideNavProps>(({ active }) => [
     & ul {
       ${tw`w-full mx-auto text-center`}
       & li {
-        ${tw`w-full p-5 cursor-pointer border-b border-neutral-700 hover:(bg-neutral-700 text-neutral-900) transition-all duration-200 ease-linear`}
+        ${tw`w-full`}
       }
     }
   `,

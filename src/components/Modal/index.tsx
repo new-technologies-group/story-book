@@ -11,7 +11,7 @@ const InnerModalContainer = styled.div`
 `;
 
 const ModalContentContainer = styled.div`
-  ${tw`border-0 rounded-xl shadow-lg relative flex flex-col w-full bg-neutral-900 outline-none focus:outline-none`}
+  ${tw`border-0 rounded-xl shadow-lg relative flex flex-col w-full h-full bg-neutral-900 outline-none focus:outline-none`}
 `;
 
 const ModalHeader = styled.div`

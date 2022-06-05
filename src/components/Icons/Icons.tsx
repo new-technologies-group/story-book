@@ -367,7 +367,7 @@ export const Add = (props: JSX.IntrinsicAttributes) => (
     <path
       fill='none'
       stroke='currentColor'
-      stroke-width='2'
+      strokeWidth='2'
       d='M12,22 L12,2 M2,12 L22,12'
     ></path>
   </svg>

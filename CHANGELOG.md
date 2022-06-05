@@ -1,3 +1,15 @@
+# v0.1.66 (Sun Jun 05 2022)
+
+#### ⚠️ Pushed to `master`
+
+- modal width ([@yondav](https://github.com/yondav))
+
+#### Authors: 1
+
+- Yoni David ([@yondav](https://github.com/yondav))
+
+---
+
 # v0.1.65 (Sun Jun 05 2022)
 
 #### ⚠️ Pushed to `master`

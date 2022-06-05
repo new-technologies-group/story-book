@@ -364,7 +364,12 @@ export const Add = (props: JSX.IntrinsicAttributes) => (
     xmlns='http://www.w3.org/2000/svg'
     {...props}
   >
-    <path fill='none' stroke='#000' stroke-width='2' d='M12,22 L12,2 M2,12 L22,12'></path>
+    <path
+      fill='none'
+      stroke='currentColor'
+      stroke-width='2'
+      d='M12,22 L12,2 M2,12 L22,12'
+    ></path>
   </svg>
 );
 
@@ -379,6 +384,6 @@ export const Subtract = (props: JSX.IntrinsicAttributes) => (
     xmlns='http://www.w3.org/2000/svg'
     {...props}
   >
-    <path fill='none' stroke='#000' stroke-width='2' d='M2,12 L22,12'></path>
+    <path fill='none' stroke='currentColor' stroke-width='2' d='M2,12 L22,12'></path>
   </svg>
 );

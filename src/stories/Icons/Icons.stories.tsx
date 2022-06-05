@@ -24,6 +24,8 @@ export default {
           'SolScan',
           'YouTube',
           'Wallet',
+          'Add',
+          'Subtract',
         ],
       },
     },

@@ -3,15 +3,15 @@ import tw, { styled } from 'twin.macro';
 import { Icon } from '../Icons';
 
 const ModalContainer = styled.div`
-  ${tw`flex justify-center items-center overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none bg-[rgba(25,25,25,.5)]`}
+  ${tw`flex justify-center items-center overflow-x-hidden overflow-y-hidden fixed inset-0 z-50 outline-none focus:outline-none bg-[rgba(25,25,25,.5)]`}
 `;
 
 const InnerModalContainer = styled.div`
-  ${tw`relative w-full md:w-3/4 lg:w-2/3 xl:w-1/2 h-screen lg:h-auto my-6 mx-auto lg:max-h-[90vh] overflow-y-scroll`}
+  ${tw`relative w-full md:w-3/4 lg:w-2/3 xl:w-1/2 h-screen lg:h-auto my-6 mx-auto lg:max-h-[90vh]`}
 `;
 
 const ModalContentContainer = styled.div`
-  ${tw`border-0 rounded-xl shadow-lg relative flex flex-col w-full h-full bg-neutral-900 outline-none focus:outline-none`}
+  ${tw`border-0 rounded-xl shadow-lg relative flex flex-col w-full h-full bg-neutral-900 outline-none focus:outline-none overflow-y-scroll`}
 `;
 
 const ModalHeader = styled.div`

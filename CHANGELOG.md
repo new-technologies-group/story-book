@@ -1,3 +1,15 @@
+# v0.1.64 (Sun Jun 05 2022)
+
+#### ⚠️ Pushed to `master`
+
+- modal scrolling, overlay background darkened ([@yondav](https://github.com/yondav))
+
+#### Authors: 1
+
+- Yoni David ([@yondav](https://github.com/yondav))
+
+---
+
 # v0.1.63 (Sun Jun 05 2022)
 
 #### ⚠️ Pushed to `master`

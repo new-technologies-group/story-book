@@ -1,4 +1,4 @@
-import React, { createElement, SVGProps } from 'react';
+import React, { SVGProps } from 'react';
 import * as icons from './Icons';
 export interface Icons {
   Twitter: 'Twitter';
@@ -12,6 +12,7 @@ export interface Icons {
   SolScan: 'SolScan';
   YouTube: 'YouTube';
   Wallet: 'Wallet';
+  Close: 'Close';
 }
 export interface IconProps extends SVGProps<any> {
   variant: string;
@@ -19,5 +20,5 @@ export interface IconProps extends SVGProps<any> {
 
 export const Icon = ({ variant, ...props }: IconProps) => {
   if (!variant) return null;
-  return createElement(icons[variant as keyof Icons], { ...props });
+  return React.createElement(icons[variant as keyof Icons], { ...props });
 };

@@ -384,6 +384,6 @@ export const Subtract = (props: JSX.IntrinsicAttributes) => (
     xmlns='http://www.w3.org/2000/svg'
     {...props}
   >
-    <path fill='none' stroke='currentColor' stroke-width='2' d='M2,12 L22,12'></path>
+    <path fill='none' stroke='currentColor' strokeWidth='2' d='M2,12 L22,12'></path>
   </svg>
 );

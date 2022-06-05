@@ -7,7 +7,7 @@ const ModalContainer = styled.div`
 `;
 
 const InnerModalContainer = styled.div`
-  ${tw`relative w-auto h-auto my-6 mx-auto max-w-7xl max-h-[90vh] overflow-y-scroll`}
+  ${tw`relative w-full md:w-3/4 lg:w-2/3 xl:w-1/2 h-auto my-6 mx-auto max-h-[90vh] overflow-y-scroll`}
 `;
 
 const ModalContentContainer = styled.div`

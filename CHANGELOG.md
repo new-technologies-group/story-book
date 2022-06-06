@@ -1,3 +1,15 @@
+# v0.1.79 (Mon Jun 06 2022)
+
+#### ⚠️ Pushed to `master`
+
+- updated export statement for Card component ([@yondav](https://github.com/yondav))
+
+#### Authors: 1
+
+- Yoni David ([@yondav](https://github.com/yondav))
+
+---
+
 # v0.1.78 (Mon Jun 06 2022)
 
 #### ⚠️ Pushed to `master`

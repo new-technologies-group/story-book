@@ -1,3 +1,15 @@
+# v0.1.80 (Mon Jun 06 2022)
+
+#### ⚠️ Pushed to `master`
+
+- indicator bullets for card component to be used on roadmap ([@yondav](https://github.com/yondav))
+
+#### Authors: 1
+
+- Yoni David ([@yondav](https://github.com/yondav))
+
+---
+
 # v0.1.79 (Mon Jun 06 2022)
 
 #### ⚠️ Pushed to `master`

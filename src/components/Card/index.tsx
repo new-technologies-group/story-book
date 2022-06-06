@@ -6,6 +6,11 @@ export interface CardProps {
   image?: boolean;
 }
 
+export interface BulletProps {
+  inProgress?: boolean;
+  complete?: boolean;
+}
+
 const CardBase = styled.div<CardProps>(({ featured }) => [
   tw`w-full min-w-[400px] rounded-xl p-2.5 bg-neutral-900 transition-all duration-300 ease-linear`,
   featured &&
@@ -38,6 +43,21 @@ export const Body = styled.main`
 `;
 
 export const Section = styled.section<{ shaded?: boolean }>(({ shaded }) => [
-  tw`p-2.5 border border-neutral-700 rounded-lg my-3`,
+  tw`p-2.5 border border-neutral-700 rounded-lg my-3 w-[fit-content]`,
   shaded && tw`bg-neutral-800 border-0`,
 ]);
+
+const BulletBase = styled.div<BulletProps>(({ inProgress, complete }) => [
+  tw`flex justify-center items-center mx-5 w-4 h-4 rounded-full bg-gradient-to-b from-purple-500 to-pink-300`,
+  (inProgress || complete) &&
+    css`
+      box-shadow: 0 0 5px #fff, -3px 0 10px var(--pink-500), 3px 0 10px var(--purple-500),
+        0 0 6px var(--purple-500), -3px 0 9px var(--pink-500), 3px 0 9px var(--pink-600);
+    `,
+]);
+
+export const Bullet = ({ complete, inProgress }: BulletProps) => (
+  <BulletBase complete={complete} inProgress={inProgress}>
+    {!complete && <div tw='w-3 h-3 m-auto rounded-full bg-neutral-900' />}
+  </BulletBase>
+);

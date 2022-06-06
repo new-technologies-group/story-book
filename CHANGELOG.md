@@ -1,3 +1,16 @@
+# v0.1.78 (Mon Jun 06 2022)
+
+#### ⚠️ Pushed to `master`
+
+- removed unused prop for now ([@yondav](https://github.com/yondav))
+- card component ([@yondav](https://github.com/yondav))
+
+#### Authors: 1
+
+- Yoni David ([@yondav](https://github.com/yondav))
+
+---
+
 # v0.1.77 (Mon Jun 06 2022)
 
 #### ⚠️ Pushed to `master`

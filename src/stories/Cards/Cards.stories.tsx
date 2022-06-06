@@ -50,7 +50,7 @@ const FeaturedCardTemplate: Story = props => (
   <div tw='grid grid-cols-12 gap-4'>
     <div tw='col-span-12 lg:col-span-6'>
       <Card.Base {...props} featured>
-        <Card.Header>
+        <Card.Header featured>
           <h1>Roadmap Card</h1>
         </Card.Header>
         <Card.Body>

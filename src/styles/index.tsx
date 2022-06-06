@@ -27,6 +27,18 @@ const CustomStyles: GlobalStyleComponent<{}, DefaultTheme> = createGlobalStyle`
     ${tw`font-semibold	text-3xl	leading-8`}
   }
 
+  h4 {
+    ${tw`font-semibold text-2xl leading-6`}
+  }
+
+  h5 {
+    ${tw`font-semibold text-xl leading-4`}
+  }
+
+  h6 {
+    ${tw`font-semibold text-lg leading-3`}
+  }
+
   p {}
 
   a {

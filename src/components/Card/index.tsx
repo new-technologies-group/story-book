@@ -34,12 +34,22 @@ export const Base: React.FC<CardProps> = ({ featured, children }) => (
   </CardBase>
 );
 
-export const Header = styled.header`
-  ${tw`p-5 w-11/12 mx-auto border-b border-solid border-neutral-700 rounded-t`}
-`;
+const _Header = styled.header<CardProps>(({ featured }) => [
+  tw`p-5 w-11/12 mx-auto border-b border-solid border-neutral-700 rounded-t`,
+  featured && tw`border-0 pb-0`,
+]);
+
+export const Header: React.FC<CardProps> = ({ featured, children }) => (
+  <_Header featured={featured}>
+    {children}
+    {featured && (
+      <div tw='h-[.5px] my-5 bg-gradient-to-r from-purple-700  via-pink-500 to-neutral-900' />
+    )}
+  </_Header>
+);
 
 export const Body = styled.main`
-  ${tw`relative p-6 flex-auto`}
+  ${tw`relative p-6 flex-auto w-11/12 mx-auto`}
 `;
 
 export const Section = styled.section<{ shaded?: boolean }>(({ shaded }) => [

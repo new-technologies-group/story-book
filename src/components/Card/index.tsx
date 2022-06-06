@@ -23,7 +23,7 @@ const InnerCard = styled.div<CardProps>(({ featured }) => [
   featured && tw`border-0 shadow-2xl`,
 ]);
 
-export const Base: React.FC<CardProps> = ({ featured, image, children }) => (
+export const Base: React.FC<CardProps> = ({ featured, children }) => (
   <CardBase featured={featured}>
     <InnerCard featured={featured}>{children}</InnerCard>
   </CardBase>

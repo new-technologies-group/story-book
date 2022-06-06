@@ -1,10 +1,17 @@
 import React from 'react';
-import tw, { styled } from 'twin.macro';
+import tw, { styled, css } from 'twin.macro';
 
-export const Input = styled.input`
-  outline-width: 0;
-  ${tw`p-2.5 bg-neutral-800 rounded-xl focus-visible:(border border-purple-500) transition-[border] duration-300 delay-200 ease-linear`}
-`;
+export interface FormElementProps {
+  invalid?: boolean;
+}
+
+export const Input = styled.input<FormElementProps>(({ invalid }) => [
+  css`
+    outline-width: 0;
+    ${tw`p-2.5 bg-neutral-800 rounded-xl focus-visible:(border border-purple-500) transition-[border] duration-300 delay-200 ease-linear`}
+  `,
+  invalid && tw`border border-red-500`,
+]);
 
 export const TextArea = styled.textarea`
   outline-width: 0;

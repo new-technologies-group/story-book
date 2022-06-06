@@ -13,7 +13,7 @@ const styles = {
 };
 
 const InputTemplate: Story = props => (
-  <Form.Input {...props} tw='w-40' style={{ width: '400px' }} />
+  <Form.Input {...props} invalid tw='w-40' style={{ width: '400px' }} />
 );
 
 const TextAreaTemplate: Story = props => <Form.TextArea {...props} style={styles} />;

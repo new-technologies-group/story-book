@@ -1,3 +1,15 @@
+# v0.1.93 (Tue Jun 07 2022)
+
+#### ⚠️ Pushed to `master`
+
+- react router index link on nav bar ([@yondav](https://github.com/yondav))
+
+#### Authors: 1
+
+- Yoni David ([@yondav](https://github.com/yondav))
+
+---
+
 # v0.1.92 (Tue Jun 07 2022)
 
 #### ⚠️ Pushed to `master`

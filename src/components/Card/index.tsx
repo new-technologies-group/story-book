@@ -12,7 +12,7 @@ export interface BulletProps {
 }
 
 const CardBase = styled.div<CardProps>(({ featured }) => [
-  tw`w-full min-w-[400px] rounded-xl p-2.5 bg-neutral-900 transition-all duration-300 ease-linear`,
+  tw`w-full rounded-xl p-2.5 bg-neutral-900 transition-all duration-300 ease-linear`,
   featured &&
     css`
       background: linear-gradient(

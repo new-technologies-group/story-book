@@ -45,6 +45,14 @@ const CustomStyles: GlobalStyleComponent<{}, DefaultTheme> = createGlobalStyle`
     ${tw` text-white hover:text-neutral-300 transition-all duration-300 ease-in`}
     text-decoration: none;
   }
+
+  main {
+    ${tw`mt-20 max-w-[1200px] mx-auto`}
+  }
+
+  section {
+    ${tw`lg:px-28 xl:px-40 p-10`}
+  }
 `;
 
 export const GlobalStyles: () => EmotionJSX.Element = () => (

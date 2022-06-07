@@ -1,3 +1,15 @@
+# v0.1.89 (Tue Jun 07 2022)
+
+#### ⚠️ Pushed to `master`
+
+- card image props ([@yondav](https://github.com/yondav))
+
+#### Authors: 1
+
+- Yoni David ([@yondav](https://github.com/yondav))
+
+---
+
 # v0.1.88 (Tue Jun 07 2022)
 
 #### ⚠️ Pushed to `master`

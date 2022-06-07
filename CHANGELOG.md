@@ -1,3 +1,15 @@
+# v0.1.91 (Tue Jun 07 2022)
+
+#### ⚠️ Pushed to `master`
+
+- featured image wrapper ([@yondav](https://github.com/yondav))
+
+#### Authors: 1
+
+- Yoni David ([@yondav](https://github.com/yondav))
+
+---
+
 # v0.1.90 (Tue Jun 07 2022)
 
 #### ⚠️ Pushed to `master`

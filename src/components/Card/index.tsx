@@ -34,9 +34,10 @@ export const Base: React.FC<CardProps> = ({ featured, children }) => (
   </CardBase>
 );
 
-const _Header = styled.header<CardProps>(({ featured }) => [
+const _Header = styled.header<CardProps>(({ featured, image }) => [
   tw`p-5 w-11/12 mx-auto border-b border-solid border-neutral-700 rounded-t transition-all duration-300 ease-linear`,
   featured && tw`border-0 pb-0`,
+  image && tw`w-auto px-0`,
 ]);
 
 export const Header: React.FC<CardProps> = ({ featured, children }) => (
@@ -50,9 +51,10 @@ export const Divider = styled.div`
   ${tw`h-[.5px] my-5 bg-gradient-to-r from-purple-700  via-pink-500 to-neutral-900 transition-all duration-300 ease-linear`}
 `;
 
-export const Body = styled.main`
-  ${tw`relative p-6 flex-auto w-11/12 mx-auto transition-all duration-300 ease-linear`}
-`;
+export const Body = styled.main<CardProps>(({ image }) => [
+  tw`relative p-6 flex-auto w-11/12 mx-auto transition-all duration-300 ease-linear`,
+  image && tw`w-auto px-0`,
+]);
 
 export const Section = styled.section<{ shaded?: boolean }>(({ shaded }) => [
   tw`p-2.5 border border-neutral-700 rounded-lg my-3 w-[fit-content] transition-all duration-300 ease-linear`,

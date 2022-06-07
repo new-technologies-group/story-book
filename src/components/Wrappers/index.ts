@@ -24,11 +24,14 @@ export const Img = styled.div<ImgContainerProps>(({ square, circle, featured }) 
   circle && tw`rounded-full`,
   featured &&
     css`
-      ${tw`p-0.5`}
       background: linear-gradient(
         var(--purple-700) 0%,
         var(--pink-500) 33%,
         rgba(0, 0, 0, 0) 66%
       );
+
+      &img {
+        width: 99% !important;
+      }
     `,
 ]);

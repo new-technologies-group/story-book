@@ -24,7 +24,7 @@ const CardBase = styled.div<CardProps>(({ featured }) => [
 ]);
 
 const InnerCard = styled.div<CardProps>(({ featured }) => [
-  tw`rounded-xl bg-neutral-900 border border-neutral-700 p-2.5`,
+  tw`rounded-xl bg-neutral-900 border border-neutral-700 p-2.5 transition-all duration-300 ease-linear`,
   featured && tw`border-0 shadow-2xl`,
 ]);
 
@@ -35,7 +35,7 @@ export const Base: React.FC<CardProps> = ({ featured, children }) => (
 );
 
 const _Header = styled.header<CardProps>(({ featured }) => [
-  tw`p-5 w-11/12 mx-auto border-b border-solid border-neutral-700 rounded-t`,
+  tw`p-5 w-11/12 mx-auto border-b border-solid border-neutral-700 rounded-t transition-all duration-300 ease-linear`,
   featured && tw`border-0 pb-0`,
 ]);
 
@@ -47,20 +47,20 @@ export const Header: React.FC<CardProps> = ({ featured, children }) => (
 );
 
 export const Divider = styled.div`
-  ${tw`h-[.5px] my-5 bg-gradient-to-r from-purple-700  via-pink-500 to-neutral-900`}
+  ${tw`h-[.5px] my-5 bg-gradient-to-r from-purple-700  via-pink-500 to-neutral-900 transition-all duration-300 ease-linear`}
 `;
 
 export const Body = styled.main`
-  ${tw`relative p-6 flex-auto w-11/12 mx-auto`}
+  ${tw`relative p-6 flex-auto w-11/12 mx-auto transition-all duration-300 ease-linear`}
 `;
 
 export const Section = styled.section<{ shaded?: boolean }>(({ shaded }) => [
-  tw`p-2.5 border border-neutral-700 rounded-lg my-3 w-[fit-content]`,
+  tw`p-2.5 border border-neutral-700 rounded-lg my-3 w-[fit-content] transition-all duration-300 ease-linear`,
   shaded && tw`bg-neutral-800 border-0`,
 ]);
 
 const BulletBase = styled.div<BulletProps>(({ inProgress, complete }) => [
-  tw`flex justify-center items-center mx-5 w-4 h-4 rounded-full bg-gradient-to-b from-purple-500 to-pink-300`,
+  tw`flex justify-center items-center mx-5 w-4 h-4 rounded-full bg-gradient-to-b from-purple-500 to-pink-300 transition-all duration-300 ease-linear`,
   (inProgress || complete) &&
     css`
       box-shadow: 0 0 5px #fff, -3px 0 10px var(--pink-500), 3px 0 10px var(--purple-500),

@@ -29,8 +29,7 @@ export const Img = styled.div<ImgContainerProps>(({ square, circle, featured }) 
         var(--pink-500) 33%,
         rgba(0, 0, 0, 0) 66%
       );
-
-      &img {
+      & img {
         width: 99% !important;
       }
     `,

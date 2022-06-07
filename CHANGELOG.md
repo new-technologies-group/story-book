@@ -1,3 +1,15 @@
+# v0.1.83 (Tue Jun 07 2022)
+
+#### ⚠️ Pushed to `master`
+
+- section padding ([@yondav](https://github.com/yondav))
+
+#### Authors: 1
+
+- Yoni David ([@yondav](https://github.com/yondav))
+
+---
+
 # v0.1.82 (Tue Jun 07 2022)
 
 #### ⚠️ Pushed to `master`

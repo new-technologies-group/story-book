@@ -3,10 +3,11 @@ import tw, { styled, css } from 'twin.macro';
 export interface ImgContainerProps {
   square?: boolean;
   circle?: boolean;
+  featured?: boolean;
 }
 
-export const Img = styled.div<ImgContainerProps>(({ square, circle }) => [
-  tw`relative overflow-hidden w-full transition-all duration-300 ease-in`,
+export const Img = styled.div<ImgContainerProps>(({ square, circle, featured }) => [
+  tw`relative overflow-hidden w-full transition-all duration-300 ease-in rounded-xl`,
 
   square &&
     css`
@@ -21,4 +22,13 @@ export const Img = styled.div<ImgContainerProps>(({ square, circle }) => [
     `,
 
   circle && tw`rounded-full`,
+  featured &&
+    css`
+      ${tw`p-0.5`}
+      background: linear-gradient(
+        var(--purple-700) 0%,
+        var(--pink-500) 33%,
+        rgba(0, 0, 0, 0) 66%
+      );
+    `,
 ]);

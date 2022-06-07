@@ -42,11 +42,13 @@ const _Header = styled.header<CardProps>(({ featured }) => [
 export const Header: React.FC<CardProps> = ({ featured, children }) => (
   <_Header featured={featured}>
     {children}
-    {featured && (
-      <div tw='h-[.5px] my-5 bg-gradient-to-r from-purple-700  via-pink-500 to-neutral-900' />
-    )}
+    {featured && <Divider />}
   </_Header>
 );
+
+export const Divider = styled.div`
+  ${tw`h-[.5px] my-5 bg-gradient-to-r from-purple-700  via-pink-500 to-neutral-900`}
+`;
 
 export const Body = styled.main`
   ${tw`relative p-6 flex-auto w-11/12 mx-auto`}

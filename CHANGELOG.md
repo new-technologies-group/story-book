@@ -1,3 +1,15 @@
+# v0.1.94 (Tue Jun 07 2022)
+
+#### ⚠️ Pushed to `master`
+
+- modal and card tweaking ([@yondav](https://github.com/yondav))
+
+#### Authors: 1
+
+- Yoni David ([@yondav](https://github.com/yondav))
+
+---
+
 # v0.1.93 (Tue Jun 07 2022)
 
 #### ⚠️ Pushed to `master`

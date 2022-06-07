@@ -40,8 +40,8 @@ const _Header = styled.header<CardProps>(({ featured, image }) => [
   image && tw`w-auto px-0`,
 ]);
 
-export const Header: React.FC<CardProps> = ({ featured, children }) => (
-  <_Header featured={featured}>
+export const Header: React.FC<CardProps> = ({ featured, image, children }) => (
+  <_Header featured={featured} image={image}>
     {children}
     {featured && <Divider />}
   </_Header>

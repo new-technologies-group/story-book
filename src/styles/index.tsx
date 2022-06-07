@@ -51,7 +51,7 @@ const CustomStyles: GlobalStyleComponent<{}, DefaultTheme> = createGlobalStyle`
   }
 
   section {
-    ${tw`lg:px-28 xl:px-36 p-10`}
+    ${tw` p-10`}
   }
 `;
 

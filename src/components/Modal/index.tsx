@@ -1,5 +1,6 @@
 import React from 'react';
 import tw, { styled } from 'twin.macro';
+import { Card } from '..';
 import { Icon } from '../Icons';
 
 const ModalContainer = styled.div`
@@ -7,19 +8,19 @@ const ModalContainer = styled.div`
 `;
 
 const InnerModalContainer = styled.div`
-  ${tw`relative w-full md:w-3/4 lg:w-2/3 xl:w-1/2 h-screen my-6 mx-auto lg:h-[90vh] overflow-y-scroll`}
+  ${tw`relative w-full p-2.5 md:w-3/4 lg:w-2/3 xl:w-1/2 h-screen my-6 mx-auto lg:h-[90vh] overflow-y-scroll`}
 `;
 
 const ModalContentContainer = styled.div`
-  ${tw`border-0 rounded-xl shadow-lg relative flex flex-col w-full h-full bg-neutral-900 outline-none focus:outline-none overflow-y-scroll`}
+  ${tw`p-2.5 border-0 rounded-xl shadow-lg relative flex flex-col w-full h-full bg-neutral-900 outline-none focus:outline-none overflow-y-scroll`}
 `;
 
 const ModalHeader = styled.div`
-  ${tw`flex items-start justify-between p-5 w-11/12 mx-auto border-b border-solid border-neutral-700 rounded-t`}
+  ${tw`relative p-5 w-11/12 mx-auto rounded-t`}
 `;
 
 const ModalBody = styled.div`
-  ${tw`relative p-6 flex-auto`}
+  ${tw`relative p-5 flex-auto w-11/12 mx-auto transition-all duration-300 ease-linear`}
 `;
 
 export interface ModalProps {
@@ -44,9 +45,10 @@ export const Modal: React.FC<ModalProps> = ({ heading, open, handleClose, childr
                 <h1>{heading}</h1>
                 <Icon
                   variant='Close'
-                  tw='text-2xl cursor-pointer'
+                  tw='text-2xl cursor-pointer absolute top-3 -right-5'
                   onClick={handleClose}
                 />
+                <Card.Divider />
               </ModalHeader>
               <ModalBody>{children}</ModalBody>
             </ModalContentContainer>

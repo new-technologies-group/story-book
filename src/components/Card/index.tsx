@@ -52,7 +52,7 @@ export const Divider = styled.div`
 `;
 
 export const Body = styled.main<CardProps>(({ image }) => [
-  tw`relative p-6 flex-auto w-11/12 mx-auto transition-all duration-300 ease-linear`,
+  tw`relative p-5 flex-auto w-11/12 mx-auto transition-all duration-300 ease-linear`,
   image && tw`w-auto px-0`,
 ]);
 

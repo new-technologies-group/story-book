@@ -1,5 +1,6 @@
 import React, { FC, useState, useRef, useEffect } from 'react';
 import tw, { styled, css } from 'twin.macro';
+import { Link } from 'react-router-dom';
 import { Button } from '../Button';
 import { Icon } from '../Icons';
 
@@ -93,12 +94,12 @@ export const Nav: FC<NavProps> = ({ links }) => {
   return (
     <>
       <Base ref={navRef} sticky={sticky}>
-        <div tw='w-1/2 md:w-1/3 lg:w-1/5 xl:w-1/6'>
+        <Link to='/' tw='w-1/2 md:w-1/3 lg:w-1/5 xl:w-1/6'>
           <img
             src='https://magnum-images.s3.amazonaws.com/brand/brand.png'
             alt='magnum'
           />
-        </div>
+        </Link>
         <div>
           <Button
             variant='outline'

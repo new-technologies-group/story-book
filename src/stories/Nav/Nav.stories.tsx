@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import { Story } from '@storybook/react/types-6-0';
 import { Nav } from '../../components/Nav';
 
@@ -17,6 +18,10 @@ export default {
   },
 };
 
-const Template: Story = props => <Nav links={[<a>Roadmap</a>]} {...props}></Nav>;
+const Template: Story = props => (
+  <BrowserRouter>
+    <Nav links={[<a>Roadmap</a>]} {...props}></Nav>
+  </BrowserRouter>
+);
 
 export const Usage = Template.bind({});

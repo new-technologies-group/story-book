@@ -1,3 +1,15 @@
+# v0.1.86 (Tue Jun 07 2022)
+
+#### ⚠️ Pushed to `master`
+
+- exporting gradient divider ([@yondav](https://github.com/yondav))
+
+#### Authors: 1
+
+- Yoni David ([@yondav](https://github.com/yondav))
+
+---
+
 # v0.1.85 (Tue Jun 07 2022)
 
 #### ⚠️ Pushed to `master`

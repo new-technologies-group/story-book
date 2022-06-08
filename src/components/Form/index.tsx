@@ -8,24 +8,41 @@ export interface FormElementProps {
 export const Input = styled.input<FormElementProps>(({ invalid }) => [
   css`
     outline-width: 0;
-    ${tw`p-2.5 bg-neutral-800 rounded-xl focus-visible:(border border-purple-500) transition-[border] duration-300 delay-200 ease-linear`}
+    &:focus-visible {
+      background: linear-gradient(var(--neutral-900), var(--neutral-900)) padding-box,
+        linear-gradient(to left, var(--purple-700), var(--pink-500)) border-box;
+      border-radius: 0.75rem;
+      border: 1px solid transparent;
+    }
+    ${tw`p-2.5 bg-neutral-800 rounded-xl transition-[border] duration-300 delay-200 ease-linear`}
   `,
   invalid && tw`border border-red-500`,
 ]);
 
 export const TextArea = styled.textarea`
   outline-width: 0;
-  ${tw`p-2.5 bg-neutral-800 rounded-xl focus-visible:(border border-purple-500) transition-[border] duration-300 delay-200 ease-linear`}
+  &:focus-visible {
+    background: linear-gradient(var(--neutral-900), var(--neutral-900)) padding-box,
+      linear-gradient(to left, var(--purple-700), var(--pink-500)) border-box;
+    border-radius: 0.75rem;
+    border: 1px solid transparent;
+  }
+  ${tw`p-2.5 bg-neutral-800 rounded-xl transition-[border] duration-300 delay-200 ease-linear`}
 `;
 
 export const Select = styled.select`
   outline-width: 0;
-  ${tw`p-2.5 bg-neutral-800 rounded-xl focus-visible:(border border-purple-500) transition-[border] duration-300 delay-200 ease-linear`}
+  &:focus-visible {
+    background: linear-gradient(var(--neutral-900), var(--neutral-900)) padding-box,
+      linear-gradient(to left, var(--purple-700), var(--pink-500)) border-box;
+    border-radius: 0.75rem;
+    border: 1px solid transparent;
+  }
+  ${tw`p-2.5 bg-neutral-800 rounded-xl transition-[border] duration-300 delay-200 ease-linear`}
 `;
 
 export const FieldSet = styled.fieldset`
-  outline-width: 0;
-  ${tw`border border-neutral-700 rounded-xl p-2.5 focus-visible:(border border-purple-500) transition-[border] duration-300 delay-200 ease-linear`}
+  ${tw`border border-neutral-700 rounded-xl p-2.5 transition-[border] duration-300 delay-200 ease-linear`}
   & legend {
     ${tw`px-2.5`}
   }

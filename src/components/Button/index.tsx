@@ -31,7 +31,7 @@ export const Button = styled.button<ButtonProps>(({ variant = 'text' }) => [
   variant === 'text' &&
     css`
       &:hover {
-        text-shadow: 0 0 2px var(--neutral-50), 0 0 5px var(--neutral-50),
+        text-shadow: 0 0 1px var(--neutral-50), 0 0 2px var(--neutral-50),
           0 0 1px var(--neutral-50), 0 0 9px var(--neutral-50), 0 0 1px var(--neutral-200),
           0 0 10px var(--neutral-200);
       }
@@ -66,6 +66,11 @@ export interface SocialButtonProps extends ButtonProps {
 
 const SocialBtn = styled(Button)<SocialButtonProps>(({ icon }) => [
   tw`flex justify-center items-center hover:text-current`,
+  css`
+    &:hover {
+      text-shadow: 0 0;
+    }
+  `,
   icon === 'Twitter' &&
     css`
       background: linear-gradient(135deg, #1da1f2, #0c81c9);

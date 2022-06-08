@@ -52,14 +52,19 @@ const FeaturedCardTemplate: Story = props => (
       <Card.Base {...props}>
         <Card.Header>
           <h1>Roadmap Card</h1>
+          <h2>Roadmap Card</h2>
+          <h3>Roadmap Card</h3>
+          <h4>Roadmap Card</h4>
+          <h5>Roadmap Card</h5>
+          <h6>Roadmap Card</h6>
         </Card.Header>
         <Card.Body>
           <div style={{ display: 'flex', alignItems: 'center' }}>
             <Card.Bullet />
             <Card.Section>
-              <p style={{ marginBottom: '.3rem', fontSize: '1.1em' }}>
+              <h6>
                 <strong>Incomplete Task</strong>
-              </p>
+              </h6>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ab ea
                 maiores, cum mollitia dolorem unde fugit tempora qui perspiciatis placeat
@@ -70,9 +75,9 @@ const FeaturedCardTemplate: Story = props => (
           <div style={{ display: 'flex', alignItems: 'center' }}>
             <Card.Bullet inProgress />
             <Card.Section>
-              <p style={{ marginBottom: '.3rem', fontSize: '1.1em' }}>
+              <h6>
                 <strong>Task In Progress</strong>
-              </p>
+              </h6>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ab ea
                 maiores, cum mollitia dolorem unde fugit tempora qui perspiciatis placeat
@@ -83,9 +88,9 @@ const FeaturedCardTemplate: Story = props => (
           <div style={{ display: 'flex', alignItems: 'center' }}>
             <Card.Bullet complete />
             <Card.Section>
-              <p style={{ marginBottom: '.3rem', fontSize: '1.1em' }}>
+              <h6>
                 <strong>Complete Task</strong>
-              </p>
+              </h6>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ab ea
                 maiores, cum mollitia dolorem unde fugit tempora qui perspiciatis placeat

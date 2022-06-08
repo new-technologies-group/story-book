@@ -1,3 +1,15 @@
+# v0.1.96 (Wed Jun 08 2022)
+
+#### ⚠️ Pushed to `master`
+
+- card padding for mobile ([@yondav](https://github.com/yondav))
+
+#### Authors: 1
+
+- Yoni David ([@yondav](https://github.com/yondav))
+
+---
+
 # v0.1.95 (Wed Jun 08 2022)
 
 #### ⚠️ Pushed to `master`

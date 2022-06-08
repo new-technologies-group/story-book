@@ -12,7 +12,7 @@ export default {
       },
       control: {
         type: 'select',
-        options: ['primary', 'secondary', 'outline', 'text'],
+        options: ['primary', 'secondary', 'outline', 'text', 'gradient'],
       },
     },
   },

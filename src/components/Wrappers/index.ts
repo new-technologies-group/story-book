@@ -24,15 +24,13 @@ export const Img = styled.div<ImgContainerProps>(({ square, circle, featured }) 
   circle && tw`rounded-full`,
   featured &&
     css`
-      background: linear-gradient(var(--neutral-900), var(--neutral-900)) padding-box,
-        linear-gradient(
-            to bottom right,
-            var(--purple-700) 0%,
-            var(--pink-500) 33%,
-            rgba(0, 0, 0, 0) 66%
-          )
-          border-box;
-      border-radius: 50em;
-      border: 1px solid transparent;
+      background: linear-gradient(
+        var(--purple-700) 0%,
+        var(--pink-500) 33%,
+        rgba(0, 0, 0, 0) 66%
+      );
+      & img {
+        width: 99% !important;
+      }
     `,
 ]);

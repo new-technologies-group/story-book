@@ -15,6 +15,8 @@ export interface Icons {
   Close: 'Close';
   Add: 'Add';
   Subtract: 'Subtract';
+  Back: 'Back';
+  Next: 'Next';
 }
 export interface IconProps extends SVGProps<any> {
   variant: string;

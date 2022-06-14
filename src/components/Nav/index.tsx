@@ -89,7 +89,7 @@ export const Nav: FC<NavProps> = ({ links }) => {
     };
     window.addEventListener('scroll', scrollHandler);
     return () => window.removeEventListener('scroll', scrollHandler);
-  });
+  }, []);
 
   return (
     <>

@@ -9,6 +9,7 @@ const CustomStyles: GlobalStyleComponent<{}, DefaultTheme> = createGlobalStyle`
 
   html {
     ${tw`min-w-[350px] text-base`}
+    scroll-behavior: smooth;
   }
 
   body {

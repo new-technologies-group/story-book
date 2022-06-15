@@ -22,7 +22,7 @@ const Base = styled.nav<BaseNavProps>(({ sticky }) => [
 
 const Overlay = styled.div<SideNavProps>(({ active }) => [
   active &&
-    tw`fixed w-full h-full bg-[rgba(0,0,0,.5)] transition-all duration-300 ease-linear`,
+    tw`fixed w-full h-full bg-[rgba(0,0,0,.5)] transition-all duration-300 ease-linear z-10`,
 ]);
 
 const SideNav = styled.div<SideNavProps>(({ active }) => [

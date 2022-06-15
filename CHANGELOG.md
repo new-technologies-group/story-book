@@ -1,3 +1,15 @@
+# v0.1.102 (Wed Jun 15 2022)
+
+#### ⚠️ Pushed to `master`
+
+- html min width ([@yondav](https://github.com/yondav))
+
+#### Authors: 1
+
+- Yoni David ([@yondav](https://github.com/yondav))
+
+---
+
 # v0.1.101 (Wed Jun 15 2022)
 
 #### ⚠️ Pushed to `master`

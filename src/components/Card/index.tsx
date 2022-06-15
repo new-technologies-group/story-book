@@ -12,12 +12,12 @@ export interface BulletProps {
   complete?: boolean;
 }
 
-const CardBase = styled.div<CardProps>(({ featured, direction = 'bottom' }) => [
+const CardBase = styled.div<CardProps>(({ featured, direction }) => [
   tw`w-full rounded-xl p-2.5 bg-neutral-900 transition-all duration-300 ease-linear`,
   featured &&
     css`
       background: linear-gradient(
-        to ${direction},
+        to ${direction || 'bottom'},
         var(--purple-700) 0%,
         var(--pink-500) 33%,
         rgba(0, 0, 0, 0) 66%

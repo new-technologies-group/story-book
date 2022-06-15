@@ -17,7 +17,8 @@ const CardBase = styled.div<CardProps>(({ featured, direction = 'bottom' }) => [
   featured &&
     css`
       background: linear-gradient(
-        to ${direction} var(--purple-700) 0%,
+        to ${direction},
+        var(--purple-700) 0%,
         var(--pink-500) 33%,
         rgba(0, 0, 0, 0) 66%
       );

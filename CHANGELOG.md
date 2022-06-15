@@ -1,3 +1,15 @@
+# v0.1.110 (Wed Jun 15 2022)
+
+#### ⚠️ Pushed to `master`
+
+- reverting card styles ([@yondav](https://github.com/yondav))
+
+#### Authors: 1
+
+- Yoni David ([@yondav](https://github.com/yondav))
+
+---
+
 # v0.1.109 (Wed Jun 15 2022)
 
 #### ⚠️ Pushed to `master`

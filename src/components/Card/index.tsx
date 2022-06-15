@@ -4,7 +4,7 @@ import tw, { styled, css } from 'twin.macro';
 export interface CardProps {
   featured?: boolean;
   image?: boolean;
-  direction?: 'right' | 'bottom' | 'left' | 'top';
+  direction?: 'bottom' | 'top';
 }
 
 export interface BulletProps {
@@ -15,9 +15,20 @@ export interface BulletProps {
 const CardBase = styled.div<CardProps>(({ featured, direction }) => [
   tw`w-full rounded-xl p-2.5 bg-neutral-900 transition-all duration-300 ease-linear`,
   featured &&
+    direction === 'bottom' &&
     css`
       background: linear-gradient(
-        to ${direction || 'bottom'},
+        to bottom,
+        var(--purple-700) 0%,
+        var(--pink-500) 33%,
+        rgba(0, 0, 0, 0) 66%
+      );
+    `,
+  featured &&
+    direction === 'top' &&
+    css`
+      background: linear-gradient(
+        to top,
         var(--purple-700) 0%,
         var(--pink-500) 33%,
         rgba(0, 0, 0, 0) 66%

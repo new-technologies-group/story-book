@@ -8,7 +8,7 @@ const CustomStyles: GlobalStyleComponent<{}, DefaultTheme> = createGlobalStyle`
   :root { ${root} }
 
   html {
-    ${tw`min-w-[350px] text-base`}
+    ${tw`text-base`}
     scroll-behavior: smooth;
   }
 

@@ -65,7 +65,7 @@ export interface SocialButtonProps extends ButtonProps {
 }
 
 const SocialBtn = styled(Button)<SocialButtonProps>(({ icon }) => [
-  tw`flex justify-center items-center hover:text-current`,
+  tw`flex justify-center items-center hover:text-white`,
   css`
     &:hover {
       text-shadow: 0 0;

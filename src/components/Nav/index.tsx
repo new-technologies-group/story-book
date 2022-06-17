@@ -94,7 +94,11 @@ export const Nav: FC<NavProps> = ({ links }) => {
   return (
     <>
       <Base ref={navRef} sticky={sticky}>
-        <Link to='/' tw='w-1/2 md:w-1/3 lg:w-1/5 xl:w-1/6'>
+        <Link
+          to='/'
+          tw='w-1/2 md:w-1/3 lg:w-1/5 xl:w-1/6'
+          onClick={() => window.scrollTo(0, 0)}
+        >
           <img
             src='https://magnum-images.s3.amazonaws.com/brand/brand.png'
             alt='magnum'

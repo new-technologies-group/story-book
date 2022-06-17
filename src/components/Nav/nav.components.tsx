@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import tw, { styled, css } from 'twin.macro';
 import { BaseNavProps, SideNavProps, NavLinkProps } from './nav.types';
 
@@ -65,6 +65,8 @@ export const Hamburger = ({ active }: SideNavProps) => (
 );
 
 export const NavLink: React.FC<NavLinkProps> = ({ hash, modal, to, children }) => {
+  const location = useLocation();
+
   if (hash)
     return (
       <a href={to} tw='w-full p-5'>

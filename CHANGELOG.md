@@ -1,3 +1,15 @@
+# v0.1.126 (Fri Jun 17 2022)
+
+#### ⚠️ Pushed to `master`
+
+- famous fox button and icon sizing ([@yondav](https://github.com/yondav))
+
+#### Authors: 1
+
+- Yoni David ([@yondav](https://github.com/yondav))
+
+---
+
 # v0.1.125 (Fri Jun 17 2022)
 
 #### ⚠️ Pushed to `master`

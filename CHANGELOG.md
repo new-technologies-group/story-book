@@ -1,3 +1,16 @@
+# v0.1.131 (Fri Jun 17 2022)
+
+#### ⚠️ Pushed to `master`
+
+- resolved improper prop types on card ([@yondav](https://github.com/yondav))
+- card refusing to take reverse props ([@yondav](https://github.com/yondav))
+
+#### Authors: 1
+
+- Yoni David ([@yondav](https://github.com/yondav))
+
+---
+
 # v0.1.130 (Fri Jun 17 2022)
 
 #### ⚠️ Pushed to `master`

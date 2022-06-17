@@ -429,7 +429,7 @@ export const Next = (props: JSX.IntrinsicAttributes) => (
 );
 
 export const FamousFox = (props: JSX.IntrinsicAttributes) => (
-  <svg xmlns='http://www.w3.org/2000/svg' width='400' height='400' fill='none' {...props}>
+  <svg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' fill='none' {...props}>
     <path
       d='M383.5 251c0-39-19.5-79.833-25.5-95.5C355.167 117.333 345.5 41 329.5 41c-38.5 0-88 30.5-88 64-25-15-48.6-5-63 5-9.333-29-34-87-58-87-48 0-78 72.5-91 132.5C28.374 160.697 17 198.2 17 251c0 80.5 98 132.5 208 132.5 120 0 158.5-99.5 158.5-132.5Z'
       fill='#2E004B'

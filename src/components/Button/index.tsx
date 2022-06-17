@@ -116,7 +116,7 @@ const SocialBtn = styled(Button)<SocialButtonProps>(({ icon }) => [
     `,
   icon === 'FamousFox' &&
     css`
-      background: linear-gradient(135deg, #fed6aa, #fb923c);
+      background: linear-gradient(135deg, #ce6f3e, #fb923c);
     `,
 ]);
 

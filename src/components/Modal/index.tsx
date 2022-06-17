@@ -1,6 +1,6 @@
 import React from 'react';
 import tw, { styled } from 'twin.macro';
-import { Card } from '..';
+import { Divider } from '../Card';
 import { Icon } from '../Icons';
 
 const ModalContainer = styled.div`
@@ -48,7 +48,7 @@ export const Modal: React.FC<ModalProps> = ({ heading, open, handleClose, childr
                   tw='text-2xl cursor-pointer absolute top-3 -right-5'
                   onClick={handleClose}
                 />
-                <Card.Divider />
+                <Divider />
               </ModalHeader>
               <ModalBody>{children}</ModalBody>
             </ModalContentContainer>

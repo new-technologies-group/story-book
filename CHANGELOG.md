@@ -1,3 +1,15 @@
+# v0.1.122 (Fri Jun 17 2022)
+
+#### ⚠️ Pushed to `master`
+
+- spinner component ([@yondav](https://github.com/yondav))
+
+#### Authors: 1
+
+- Yoni David ([@yondav](https://github.com/yondav))
+
+---
+
 # v0.1.121 (Fri Jun 17 2022)
 
 #### ⚠️ Pushed to `master`

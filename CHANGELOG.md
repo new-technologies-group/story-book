@@ -1,3 +1,15 @@
+# v0.1.130 (Fri Jun 17 2022)
+
+#### ⚠️ Pushed to `master`
+
+- reversed card prop ([@yondav](https://github.com/yondav))
+
+#### Authors: 1
+
+- Yoni David ([@yondav](https://github.com/yondav))
+
+---
+
 # v0.1.129 (Fri Jun 17 2022)
 
 #### ⚠️ Pushed to `master`

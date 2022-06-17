@@ -1,3 +1,16 @@
+# v0.1.119 (Fri Jun 17 2022)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of github.com:new-technologies-group/story-book ([@yondav](https://github.com/yondav))
+- resolving circular dep in modal component ([@yondav](https://github.com/yondav))
+
+#### Authors: 1
+
+- Yoni David ([@yondav](https://github.com/yondav))
+
+---
+
 # v0.1.118 (Fri Jun 17 2022)
 
 #### ⚠️ Pushed to `master`

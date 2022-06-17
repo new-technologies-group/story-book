@@ -1,3 +1,15 @@
+# v0.1.120 (Fri Jun 17 2022)
+
+#### ⚠️ Pushed to `master`
+
+- trying to resolve overlooked tw properties ([@yondav](https://github.com/yondav))
+
+#### Authors: 1
+
+- Yoni David ([@yondav](https://github.com/yondav))
+
+---
+
 # v0.1.119 (Fri Jun 17 2022)
 
 #### ⚠️ Pushed to `master`

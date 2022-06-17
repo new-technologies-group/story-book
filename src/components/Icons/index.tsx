@@ -17,6 +17,7 @@ export interface Icons {
   Subtract: 'Subtract';
   Back: 'Back';
   Next: 'Next';
+  FamousFox: 'FamousFox';
 }
 export interface IconProps extends SVGProps<any> {
   variant: string;

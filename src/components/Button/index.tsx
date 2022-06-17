@@ -59,7 +59,8 @@ export interface SocialButtonProps extends ButtonProps {
     | 'Instagram'
     | 'MagicEden'
     | 'OpenSea'
-    | 'YouTube';
+    | 'YouTube'
+    | 'FamousFox';
   children: ReactNode;
   onClick?: () => any;
 }
@@ -112,6 +113,10 @@ const SocialBtn = styled(Button)<SocialButtonProps>(({ icon }) => [
   icon === 'YouTube' &&
     css`
       background: linear-gradient(135deg, #ff0000, #c50505);
+    `,
+  icon === 'FamousFox' &&
+    css`
+      background: linear-gradient(135deg, #fed6aa, #fb923c);
     `,
 ]);
 

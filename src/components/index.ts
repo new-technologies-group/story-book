@@ -6,3 +6,4 @@ export * from './Modal';
 export * as Form from './Form';
 export * as Card from './Card';
 export * as Wrappers from './Wrappers';
+export * from './Spinner';

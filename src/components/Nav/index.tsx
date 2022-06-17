@@ -3,6 +3,7 @@ import { Base, Overlay, SideNav, Hamburger, Logo } from './nav.components';
 import { NavProps } from './nav.types';
 import { Button } from '../Button';
 import { Icon } from '../Icons';
+import 'twin.macro';
 
 export * from './nav.types';
 export { NavLink } from './nav.components';

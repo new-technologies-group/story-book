@@ -26,6 +26,7 @@ export default {
           'Wallet',
           'Add',
           'Subtract',
+          'FamousFox',
         ],
       },
     },

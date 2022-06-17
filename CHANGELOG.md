@@ -1,3 +1,15 @@
+# v0.1.121 (Fri Jun 17 2022)
+
+#### ⚠️ Pushed to `master`
+
+- attempting to resolve background location for modal layout from nav link ([@yondav](https://github.com/yondav))
+
+#### Authors: 1
+
+- Yoni David ([@yondav](https://github.com/yondav))
+
+---
+
 # v0.1.120 (Fri Jun 17 2022)
 
 #### ⚠️ Pushed to `master`

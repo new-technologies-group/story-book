@@ -27,6 +27,16 @@ export const SideNav = styled.div<SideNavProps>(({ active }) => [
   `,
 ]);
 
+export const Logo = () => (
+  <Link
+    to='/'
+    onClick={() => window.scrollTo(0, 0)}
+    tw='w-1/2 md:w-1/3 lg:w-1/5 xl:w-1/6'
+  >
+    <img src='https://magnum-images.s3.amazonaws.com/brand/brand.png' alt='magnum' />
+  </Link>
+);
+
 export const Hamburger = ({ active }: SideNavProps) => (
   <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='1.5em'>
     <rect

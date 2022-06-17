@@ -1,7 +1,5 @@
 import React, { FC, useState, useRef, useEffect } from 'react';
-import tw from 'twin.macro';
-import { Link } from 'react-router-dom';
-import { Base, Overlay, SideNav, Hamburger } from './nav.components';
+import { Base, Overlay, SideNav, Hamburger, Logo } from './nav.components';
 import { NavProps } from './nav.types';
 import { Button } from '../Button';
 import { Icon } from '../Icons';
@@ -37,16 +35,7 @@ export const Nav: FC<NavProps> = ({ links }) => {
   return (
     <>
       <Base ref={navRef} sticky={sticky}>
-        <Link
-          to='/'
-          onClick={() => window.scrollTo(0, 0)}
-          tw='w-1/2 md:w-1/3 lg:w-1/5 xl:w-1/6'
-        >
-          <img
-            src='https://magnum-images.s3.amazonaws.com/brand/brand.png'
-            alt='magnum'
-          />
-        </Link>
+        <Logo />
         <div>
           <Button
             variant='outline'

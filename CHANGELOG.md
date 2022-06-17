@@ -1,3 +1,15 @@
+# v0.1.112 (Fri Jun 17 2022)
+
+#### ⚠️ Pushed to `master`
+
+- scroll to top on click for magnum logo link to home ([@yondav](https://github.com/yondav))
+
+#### Authors: 1
+
+- Yoni David ([@yondav](https://github.com/yondav))
+
+---
+
 # v0.1.111 (Fri Jun 17 2022)
 
 #### ⚠️ Pushed to `master`

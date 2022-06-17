@@ -27,10 +27,11 @@ const CardBase = styled.div<CardProps>(({ featured, reversed }) => [
     reversed &&
     css`
       background: linear-gradient(
+        to top,
         rgba(0, 0, 0, 0) 0%,
         var(--pink-500) 33%,
         var(--purple-700) 66%
-      );
+      ) !important;
     `,
 ]);
 

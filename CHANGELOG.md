@@ -1,3 +1,15 @@
+# v0.1.116 (Fri Jun 17 2022)
+
+#### ⚠️ Pushed to `master`
+
+- nav logo sizing ([@yondav](https://github.com/yondav))
+
+#### Authors: 1
+
+- Yoni David ([@yondav](https://github.com/yondav))
+
+---
+
 # v0.1.115 (Fri Jun 17 2022)
 
 #### ⚠️ Pushed to `master`

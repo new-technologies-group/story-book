@@ -4,6 +4,7 @@ import tw, { styled, css } from 'twin.macro';
 export interface CardProps {
   featured?: boolean;
   featuredInverse?: boolean;
+  featuredSides?: boolean;
   image?: boolean;
 }
 
@@ -12,7 +13,7 @@ export interface BulletProps {
   complete?: boolean;
 }
 
-const CardBase = styled.div<CardProps>(({ featured, featuredInverse }) => [
+const CardBase = styled.div<CardProps>(({ featured, featuredInverse, featuredSides }) => [
   tw`w-full rounded-xl p-2.5 bg-neutral-900 transition-all duration-300 ease-linear`,
   featured &&
     css`
@@ -32,16 +33,34 @@ const CardBase = styled.div<CardProps>(({ featured, featuredInverse }) => [
         rgba(0, 0, 0, 0) 66%
       );
     `,
+  featuredSides &&
+    css`
+      background: linear-gradient(
+        rgba(0, 0, 0, 0) 0%,
+        var(--purple-700) 33%,
+        var(--pink-500) 50%,
+        rgba(0, 0, 0, 0) 66%
+      );
+    `,
 ]);
 
-const InnerCard = styled.div<CardProps>(({ featured, featuredInverse }) => [
+const InnerCard = styled.div<CardProps>(({ featured }) => [
   tw`rounded-xl bg-neutral-900 border border-neutral-700 py-5 md:p-2.5 transition-all duration-300 ease-linear`,
-  (featured || featuredInverse) && tw`border-0 shadow-2xl`,
+  featured && tw`border-0 shadow-2xl`,
 ]);
 
-export const Base: React.FC<CardProps> = ({ featured, featuredInverse, children }) => (
-  <CardBase featured={featured} featuredInverse={featuredInverse}>
-    <InnerCard featured={featured} featuredInverse={featuredInverse}>
+export const Base: React.FC<CardProps> = ({
+  featured,
+  featuredInverse,
+  featuredSides,
+  children,
+}) => (
+  <CardBase
+    featured={featured}
+    featuredInverse={featuredInverse}
+    featuredSides={featuredSides}
+  >
+    <InnerCard featured={featured || featuredInverse || featuredSides}>
       {children}
     </InnerCard>
   </CardBase>

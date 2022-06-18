@@ -52,7 +52,7 @@ const CustomStyles: GlobalStyleComponent<{}, DefaultTheme> = createGlobalStyle`
   }
 
   section {
-    ${tw` p-4 sm:p-10`}
+    ${tw` p-4 sm:p-10 my-20`}
     scroll-margin: 5rem;
   }
 `;

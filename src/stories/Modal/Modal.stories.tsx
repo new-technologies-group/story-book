@@ -13,7 +13,11 @@ const Template: Story = () => {
   const [isOpen, setIsopen] = useState<boolean>(true);
   const handleClose = () => setIsopen(false);
   return (
-    <Modal open={isOpen} handleClose={handleClose} heading='Modal'>
+    <Modal
+      open={isOpen}
+      handleClose={handleClose}
+      heading='Modal'
+    >
       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et laudantium a officia
       harum minima quibusdam mollitia assumenda, aut voluptate pariatur sequi hic quisquam
       quis architecto beatae voluptatibus cum numquam ut! Doloremque dolores repudiandae

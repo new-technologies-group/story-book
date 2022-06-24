@@ -122,10 +122,16 @@ const SocialBtn = styled(Button)<SocialButtonProps>(({ icon }) => [
 
 export const SocialButton: FC<SocialButtonProps> = ({ icon, children, ...props }) => {
   return (
-    <SocialBtn icon={icon} {...props}>
+    <SocialBtn
+      icon={icon}
+      {...props}
+    >
       <div tw='flex justify-center items-center'>
         {children}
-        <Icon variant={icon as string} tw='ml-2' />
+        <Icon
+          variant={icon as string}
+          tw='ml-2'
+        />
       </div>
     </SocialBtn>
   );
@@ -133,7 +139,11 @@ export const SocialButton: FC<SocialButtonProps> = ({ icon, children, ...props }
 
 export const WalletButton = (props: any) => {
   return (
-    <Button variant='outline' tw='p-2 rounded-md' {...props}>
+    <Button
+      variant='outline'
+      tw='p-2 rounded-md'
+      {...props}
+    >
       <Icon variant='Wallet' />
     </Button>
   );

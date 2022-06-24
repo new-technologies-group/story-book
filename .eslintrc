@@ -2,15 +2,16 @@
   "env": {
     "browser": true,
     "commonjs": true,
-    "es2021": true
+    "es2021": true,
+    "jest": true
   },
-  "parser": "@typescript-eslint/parser",
-  "extends": ["plugin:prettier/recommended"],
-  "parserOptions": {
-    "ecmaVersion": "latest",
-    "project": "./tsconfig.json"
-  },
+  "extends": ["airbnb-typescript-prettier"],
   "rules": {
+    "import/prefer-default-export": 0,
+    "import/no-extraneous-dependencies": 0,
+    "import/no-unresolved": 0,
+    "react/require-default-props": 0,
+    "react/function-component-definition": 0,
     "no-unused-vars": 1,
     "no-console": 1,
     "global-require": "off",
@@ -23,8 +24,7 @@
     "consistent-return": "off",
     "radix": "off",
     "curly": "off",
-    "nonblock-statement-body-position": "off",
-    "prettier/prettier": "error"
-  },
-  "plugins": ["prettier"]
+    "nonblock-statement-body-position": "off"
+  }
 }
+

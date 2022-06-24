@@ -1,6 +1,8 @@
 import React from 'react';
-import { GlobalStyles } from './../src/styles';
 import { theme } from 'twin.macro';
+
+import { GlobalStyles } from './../src/styles';
+
 import myTheme from './theme';
 
 export const parameters = {

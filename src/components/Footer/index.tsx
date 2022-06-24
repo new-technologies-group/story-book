@@ -10,13 +10,21 @@ export const Footer = () => (
   <FooterBase>
     <p tw='whitespace-nowrap text-sm'>&#169; {new Date().getFullYear()} Magnum Ai</p>
     <div tw='flex mt-4'>
-      <a href='https://discord.gg/tUDWfAhxaR' target='_blank' rel='noopener noreferrer'>
+      <a
+        href='https://discord.gg/tUDWfAhxaR'
+        target='_blank'
+        rel='noopener noreferrer'
+      >
         <Icon
           variant='Discord'
           tw='hover:text-[#5865f2] transition-all duration-200 ease-in mx-1.5'
         />
       </a>
-      <a href='https://twitter.com/_MagnumAI' target='_blank' rel='noopener noreferrer'>
+      <a
+        href='https://twitter.com/_MagnumAI'
+        target='_blank'
+        rel='noopener noreferrer'
+      >
         <Icon
           variant='Twitter'
           tw='hover:text-[#1da1f2] transition-all duration-200 ease-in mx-1.5'

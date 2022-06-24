@@ -55,7 +55,11 @@ export const Legend = styled.legend`
 export const Switch = React.forwardRef<HTMLInputElement>((props, checkRef) => {
   return (
     <div tw='h-[fit-content] flex items-end'>
-      <_Switch ref={checkRef} {...props} type='checkbox' />
+      <_Switch
+        ref={checkRef}
+        {...props}
+        type='checkbox'
+      />
     </div>
   );
 });
@@ -64,7 +68,11 @@ export const CheckBox = React.forwardRef<HTMLInputElement>((props, checkRef) => 
   return (
     <div tw='block'>
       <label tw='inline-flex items-center'>
-        <_CheckBox type='checkbox' {...props} ref={checkRef} />
+        <_CheckBox
+          type='checkbox'
+          {...props}
+          ref={checkRef}
+        />
       </label>
     </div>
   );

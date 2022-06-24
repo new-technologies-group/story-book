@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-expressions */
+/* eslint-disable react/function-component-definition */
 import React, { FC, useContext, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Modal } from '../components/Modal';
@@ -19,10 +21,14 @@ export const ModalLayout: FC<ModalLayoutProps> = ({ children, back, heading }) =
 
   useEffect(() => {
     toggleModal && toggleModal();
-  }, []);
+  }, [toggleModal]);
 
   return (
-    <Modal handleClose={handleClose} open={isOpen} heading={heading}>
+    <Modal
+      handleClose={handleClose}
+      open={isOpen}
+      heading={heading}
+    >
       {children}
     </Modal>
   );

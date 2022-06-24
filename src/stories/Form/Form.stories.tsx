@@ -13,19 +13,35 @@ const styles = {
 };
 
 const InputTemplate: Story = props => (
-  <Form.Input {...props} invalid tw='w-40' style={{ width: '400px' }} />
+  <Form.Input
+    {...props}
+    invalid
+    tw='w-40'
+    style={{ width: '400px' }}
+  />
 );
 
-const TextAreaTemplate: Story = props => <Form.TextArea {...props} style={styles} />;
+const TextAreaTemplate: Story = props => (
+  <Form.TextArea
+    {...props}
+    style={styles}
+  />
+);
 
 const SelectTemplate: Story = props => (
-  <Form.Select {...props} style={{ width: '400px' }}>
+  <Form.Select
+    {...props}
+    style={{ width: '400px' }}
+  >
     <option>Option one</option>
   </Form.Select>
 );
 
 const FieldSetTemplate: Story = props => (
-  <Form.FieldSet {...props} style={styles}>
+  <Form.FieldSet
+    {...props}
+    style={styles}
+  >
     <legend>Fieldset</legend>
   </Form.FieldSet>
 );

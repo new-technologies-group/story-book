@@ -34,7 +34,10 @@ export default {
 };
 
 const Template: Story = props => (
-  <SocialButton icon='Twitter' {...props}>
+  <SocialButton
+    icon='Twitter'
+    {...props}
+  >
     {props.icon}
   </SocialButton>
 );

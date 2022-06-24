@@ -35,7 +35,10 @@ export const Nav: FC<NavProps> = ({ links }) => {
 
   return (
     <>
-      <Base ref={navRef} sticky={sticky}>
+      <Base
+        ref={navRef}
+        sticky={sticky}
+      >
         <Logo />
         <div>
           <Button
@@ -61,7 +64,10 @@ export const Nav: FC<NavProps> = ({ links }) => {
         >
           <ul>
             {links.map((link, i) => (
-              <li key={i} onClick={() => setActiveBurger(false)}>
+              <li
+                key={i}
+                onClick={() => setActiveBurger(false)}
+              >
                 {link}
               </li>
             ))}
@@ -120,7 +126,10 @@ export const Nav: FC<NavProps> = ({ links }) => {
           </div>
         </SideNav>
       </Base>
-      <Overlay active={activeBurger} onClick={() => setActiveBurger(false)} />
+      <Overlay
+        active={activeBurger}
+        onClick={() => setActiveBurger(false)}
+      />
     </>
   );
 };

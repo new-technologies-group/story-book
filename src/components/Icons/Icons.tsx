@@ -251,7 +251,10 @@ export const SolScan = (props: JSX.IntrinsicAttributes) => (
       />
     </filter>
 
-    <g xmlns='http://www.w3.org/2000/svg' clipPath='url(#id36)'>
+    <g
+      xmlns='http://www.w3.org/2000/svg'
+      clipPath='url(#id36)'
+    >
       <g clipPath='url(#id37)'>
         <g mask='url(#id38)'>
           <g transform='matrix(0.425557, 0, 0, 0.425207, 1097.354123, 744.503801)'>
@@ -271,19 +274,28 @@ export const SolScan = (props: JSX.IntrinsicAttributes) => (
         </g>
       </g>
     </g>
-    <clipPath xmlns='http://www.w3.org/2000/svg' id='id36'>
+    <clipPath
+      xmlns='http://www.w3.org/2000/svg'
+      id='id36'
+    >
       <path
         d='M 1097.566406 745 L 1231.507812 745 L 1231.507812 878 L 1097.566406 878 Z M 1097.566406 745 '
         clipRule='nonzero'
       />
     </clipPath>
-    <clipPath xmlns='http://www.w3.org/2000/svg' id='id37'>
+    <clipPath
+      xmlns='http://www.w3.org/2000/svg'
+      id='id37'
+    >
       <path
         d='M 1231.507812 811.472656 C 1231.507812 848.460938 1201.523438 878.445312 1164.535156 878.445312 C 1127.550781 878.445312 1097.566406 848.460938 1097.566406 811.472656 C 1097.566406 774.488281 1127.550781 744.503906 1164.535156 744.503906 C 1201.523438 744.503906 1231.507812 774.488281 1231.507812 811.472656 Z M 1231.507812 811.472656 '
         clipRule='nonzero'
       />
     </clipPath>
-    <mask xmlns='http://www.w3.org/2000/svg' id='id38'>
+    <mask
+      xmlns='http://www.w3.org/2000/svg'
+      id='id38'
+    >
       <g filter='url(#id1)'>
         <g
           filter='url(#id2)'
@@ -384,7 +396,12 @@ export const Subtract = (props: JSX.IntrinsicAttributes) => (
     xmlns='http://www.w3.org/2000/svg'
     {...props}
   >
-    <path fill='none' stroke='currentColor' strokeWidth='2' d='M2,12 L22,12'></path>
+    <path
+      fill='none'
+      stroke='currentColor'
+      strokeWidth='2'
+      d='M2,12 L22,12'
+    ></path>
   </svg>
 );
 

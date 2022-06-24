@@ -38,7 +38,10 @@ export const Modal: React.FC<ModalProps> = ({ heading, open, handleClose, childr
   if (open)
     return (
       <>
-        <ModalContainer ref={wrapperRef} onClick={handleBlur}>
+        <ModalContainer
+          ref={wrapperRef}
+          onClick={handleBlur}
+        >
           <InnerModalContainer>
             <ModalContentContainer>
               <ModalHeader>

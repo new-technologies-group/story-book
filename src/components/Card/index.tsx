@@ -73,7 +73,10 @@ const _Header = styled.header<CardProps>(({ featured, image }) => [
 ]);
 
 export const Header: React.FC<CardProps> = ({ featured, image, children }) => (
-  <_Header featured={featured} image={image}>
+  <_Header
+    featured={featured}
+    image={image}
+  >
     {children}
     {featured && <Divider />}
   </_Header>
@@ -103,7 +106,10 @@ const BulletBase = styled.div<BulletProps>(({ inProgress, complete }) => [
 ]);
 
 export const Bullet = ({ complete, inProgress }: BulletProps) => (
-  <BulletBase complete={complete} inProgress={inProgress}>
+  <BulletBase
+    complete={complete}
+    inProgress={inProgress}
+  >
     {!complete && <div tw='w-3 h-3 m-auto rounded-full bg-neutral-900' />}
   </BulletBase>
 );

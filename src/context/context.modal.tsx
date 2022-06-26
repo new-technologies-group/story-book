@@ -1,3 +1,5 @@
+// TODO: Fix this
+/* eslint-disable react/jsx-no-constructed-context-values */
 import React, { createContext, useState, useEffect } from 'react';
 
 interface ModalContext {
@@ -28,7 +30,7 @@ export const ModalProvider: React.FC = ({ children }) => {
       (ROOT as HTMLDivElement).style.height = '';
       (ROOT as HTMLDivElement).style.overflowY = '';
     }
-  }, [isOpen]);
+  }, [ROOT, isOpen]);
 
   return (
     <ModalContext.Provider value={{ isOpen, toggleModal }}>

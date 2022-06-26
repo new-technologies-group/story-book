@@ -19,7 +19,10 @@ export default {
 };
 
 const Template: Story = props => (
-  <Button variant='text' {...props}>
+  <Button
+    variant='text'
+    {...props}
+  >
     {props.variant}
   </Button>
 );

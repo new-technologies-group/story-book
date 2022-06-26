@@ -1,3 +1,5 @@
+/* eslint-disable react/function-component-definition */
+/* eslint-disable @typescript-eslint/ban-types */
 import { EmotionJSX } from '@emotion/react/types/jsx-namespace';
 import React from 'react';
 import { createGlobalStyle, DefaultTheme, GlobalStyleComponent } from 'styled-components';

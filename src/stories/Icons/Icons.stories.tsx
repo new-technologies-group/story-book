@@ -34,7 +34,10 @@ export default {
 };
 
 const Template: Story = props => (
-  <Icon variant='Twitter' {...props}>
+  <Icon
+    variant='Twitter'
+    {...props}
+  >
     Heading
   </Icon>
 );

@@ -11,14 +11,16 @@
     "module": "ESNext",
     "strict": true,
     "skipLibCheck": true,
+    "outDir": "./dist",
     // "noEmit": true,
     // Ensure that Babel can safely transpile files in the TypeScript project
     "isolatedModules": true,
     "declaration": true,
-    "declarationDir": "dist/types",
+    "declarationMap": true,
     "emitDeclarationOnly": true,
+    "sourceMap": true,
     // Ensure that Babel can safely transpile files in the TypeScript project
-    "jsxImportSource": "@emotion/react" // Add the css prop
+    // "jsxImportSource": "@emotion/react" // Add the css prop
   },
   "include": ["src", "types"]
 }

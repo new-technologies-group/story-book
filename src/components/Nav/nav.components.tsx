@@ -33,12 +33,19 @@ export const Logo = () => (
     onClick={() => window.scrollTo(0, 0)}
     tw='w-1/2 md:w-1/3 lg:w-1/5 xl:w-1/6'
   >
-    <img src='https://magnum-images.s3.amazonaws.com/brand/brand.png' alt='magnum' />
+    <img
+      src='https://magnum-images.s3.amazonaws.com/brand/brand.png'
+      alt='magnum'
+    />
   </Link>
 );
 
 export const Hamburger = ({ active }: SideNavProps) => (
-  <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='1.5em'>
+  <svg
+    xmlns='http://www.w3.org/2000/svg'
+    viewBox='0 0 24 24'
+    width='1.5em'
+  >
     <rect
       fill='white'
       x='2.22'
@@ -69,12 +76,19 @@ export const NavLink: React.FC<NavLinkProps> = ({ hash, modal, to, children }) =
 
   if (hash)
     return (
-      <a href={to} tw='w-full p-5'>
+      <a
+        href={to}
+        tw='w-full p-5'
+      >
         <div tw='w-full'>{children}</div>
       </a>
     );
   return (
-    <Link to={to} state={{ backgroundLocation: modal ? location : null }} tw='w-full p-5'>
+    <Link
+      to={to}
+      state={{ backgroundLocation: modal ? location : null }}
+      tw='w-full p-5'
+    >
       <div tw='w-full'>{children}</div>
     </Link>
   );

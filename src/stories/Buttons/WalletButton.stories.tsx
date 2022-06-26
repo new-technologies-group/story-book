@@ -9,7 +9,10 @@ export default {
 };
 
 const Template: Story = props => (
-  <WalletButton icon='Twitter' {...props}>
+  <WalletButton
+    icon='Twitter'
+    {...props}
+  >
     {props.icon}
   </WalletButton>
 );

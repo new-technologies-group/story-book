@@ -1,6 +1,6 @@
 import React from 'react';
-import { Story } from '@storybook/react/types-6-0';
-import { SocialButton } from '../../components/Button';
+import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { SocialButton } from '.';
 
 export default {
   title: 'Social Button',
@@ -31,16 +31,10 @@ export default {
       },
     },
   },
-};
+} as ComponentMeta<typeof SocialButton>;
 
-const Template: Story = props => (
-  <SocialButton
-    icon='Twitter'
-    {...props}
-  >
-    {props.icon}
-  </SocialButton>
+const Template: ComponentStory<typeof SocialButton> = props => (
+  <SocialButton {...props}>Social Button</SocialButton>
 );
 
 export const Usage = Template.bind({});
-Usage.args = { icon: 'Twitter' };

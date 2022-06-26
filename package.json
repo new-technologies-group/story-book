@@ -80,7 +80,6 @@
     "postcss": "^8.4.14",
     "prettier": "2.7.1",
     "react-test-renderer": "^18.2.0",
-    "storybook-tailwind-dark-mode": "^1.0.12",
     "styled-components": "^5.3.3",
     "tailwindcss": "2.2.19",
     "ts-jest": "^28.0.5",

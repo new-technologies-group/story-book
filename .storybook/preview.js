@@ -3,8 +3,6 @@ import { theme } from 'twin.macro';
 
 import { GlobalStyles } from './../src/styles';
 
-import myTheme from './theme';
-
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
   layout: 'centered',
@@ -13,10 +11,13 @@ export const parameters = {
     values: [
       {
         name: 'dark',
-        value: `${theme`colors.neutral.900`})`,
+        value: `${theme`colors.neutral.900`}`,
       },
     ],
   },
+  // docs: {
+  //   theme: theme`colors.neutral.900`,
+  // },
   controls: { expanded: true },
 };
 

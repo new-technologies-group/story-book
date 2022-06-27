@@ -21,9 +21,9 @@ export default {
 const Template: Story = props => (
   <BrowserRouter>
     <Nav
-      links={[<a>Roadmap</a>]}
+      links={[{ hash: true, modal: false, to: '#', text: 'Home' }]}
       {...props}
-    ></Nav>
+    />
   </BrowserRouter>
 );
 

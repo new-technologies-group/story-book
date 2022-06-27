@@ -1,24 +1,31 @@
-// TODO: Fix this
-/* eslint-disable react/jsx-no-constructed-context-values */
-import React, { createContext, useState, useEffect } from 'react';
+import React, {
+  createContext,
+  FC,
+  useCallback,
+  useContext,
+  useEffect,
+  useMemo,
+  useState,
+} from 'react';
 
 interface ModalContext {
   isOpen: boolean;
-  toggleModal?: () => void;
+  toggleModal: () => void;
 }
 
 const defaultState = {
   isOpen: false,
+  toggleModal: () => null,
 };
 
 export const ModalContext = createContext<ModalContext>(defaultState);
 
-export const ModalProvider: React.FC = ({ children }) => {
+export const ModalProvider: FC = ({ children }) => {
   const [isOpen, setIsOpen] = useState(defaultState.isOpen);
 
-  const toggleModal = () => {
+  const toggleModal = useCallback(() => {
     setIsOpen(!isOpen);
-  };
+  }, [isOpen]);
 
   const ROOT = document.getElementById('root');
 
@@ -32,13 +39,11 @@ export const ModalProvider: React.FC = ({ children }) => {
     }
   }, [ROOT, isOpen]);
 
-  return (
-    <ModalContext.Provider value={{ isOpen, toggleModal }}>
-      {children}
-    </ModalContext.Provider>
-  );
+  const context = useMemo(() => ({ isOpen, toggleModal }), [isOpen, toggleModal]);
+
+  return <ModalContext.Provider value={context}>{children}</ModalContext.Provider>;
 };
 
 export function useModal() {
-  return React.useContext(ModalContext);
+  return useContext(ModalContext);
 }

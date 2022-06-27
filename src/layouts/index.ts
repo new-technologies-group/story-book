@@ -1,2 +1,2 @@
-export * from './layouts.MainLayout';
-export * from './layouts.ModalLayout';
+export * from './Main';
+export * from './Modal';

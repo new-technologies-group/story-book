@@ -1,20 +1,20 @@
 import { ReactNode } from 'react';
 
 export interface ButtonProps {
-  variant?: 'primary' | 'secondary' | 'text' | 'outline' | 'gradient';
+  variant?: 'primary' | 'secondary' | 'text';
 }
 
 export interface SocialButtonProps extends ButtonProps {
   icon:
-    | 'Twitter'
-    | 'Discord'
-    | 'Linkedin'
-    | 'Twitch'
-    | 'Instagram'
-    | 'MagicEden'
-    | 'OpenSea'
-    | 'YouTube'
-    | 'FamousFox';
+    | 'twitter'
+    | 'discord'
+    | 'linkedin'
+    | 'twitch'
+    | 'instagram'
+    | 'magicEden'
+    | 'openSea'
+    | 'youTube'
+    | 'famousFox';
   children: ReactNode;
   onClick?: () => void;
 }

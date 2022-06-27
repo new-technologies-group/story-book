@@ -1,7 +1,7 @@
 import React from 'react';
 import { theme } from 'twin.macro';
 
-import { GlobalStyles } from './../src/styles';
+import { GlobalStyles } from '../src/styles';
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },

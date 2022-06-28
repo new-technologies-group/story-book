@@ -1,6 +1,11 @@
 import React, { FC, useState, useRef, useEffect } from 'react';
 import { Button } from '../Button';
-import { _Base, _Overlay, _SideNav, _Hamburger, _Logo, _NavLink } from './components';
+import { _Base } from './Base';
+import { _Overlay } from './Overlay';
+import { _Drawer } from './Drawer';
+import { _Hamburger } from './Hamburger';
+import { _Logo } from './Logo';
+import { _NavLink } from './NavLink';
 import { SocialIconLink, socialList } from '../Icons';
 import { NavProps } from './Nav.types';
 import 'twin.macro';
@@ -49,7 +54,7 @@ export const Nav: FC<NavProps> = ({ links }) => {
             <_Hamburger active={activeBurger} />
           </Button>
         </div>
-        <_SideNav
+        <_Drawer
           ref={sideRef}
           active={activeBurger}
           style={{
@@ -82,7 +87,7 @@ export const Nav: FC<NavProps> = ({ links }) => {
               />
             ))}
           </div>
-        </_SideNav>
+        </_Drawer>
       </_Base>
       <_Overlay
         active={activeBurger}

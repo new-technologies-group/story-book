@@ -1,7 +1,7 @@
 import tw, { styled, css } from 'twin.macro';
 import { ButtonProps } from './Button.types';
 
-export const Button = styled.button<ButtonProps>(({ variant = 'primary' }) => [
+export const Button = styled.button<ButtonProps>(({ variant = 'primary', social }) => [
   tw`m-2 text-white font-bold py-4 px-6 rounded-full transition-all duration-200 ease-in hover:-translate-y-0.5`,
   css`
     background-size: 125% !important;
@@ -24,12 +24,13 @@ export const Button = styled.button<ButtonProps>(({ variant = 'primary' }) => [
     css`
       &:hover {
         text-shadow: 0 0 1px var(--neutral-50), 0 0 2px var(--neutral-50),
-          0 0 1px var(--neutral-50), 0 0 9px var(--neutral-50), 0 0 1px var(--neutral-200),
-          0 0 10px var(--neutral-200);
+          0 0 1px var(--neutral-50), 0 0 3px var(--neutral-50), 0 0 1px var(--neutral-200),
+          0 0 4px var(--neutral-200);
       }
     `,
 
-  variant === 'primary' &&
+  !social &&
+    variant === 'primary' &&
     css`
       background: linear-gradient(var(--neutral-900), var(--neutral-900)) padding-box,
         linear-gradient(to left, var(--purple-700), var(--pink-500)) border-box;

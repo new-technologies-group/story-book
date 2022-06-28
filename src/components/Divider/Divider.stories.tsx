@@ -22,10 +22,14 @@ export default {
   },
 } as ComponentMeta<typeof Divider>;
 
-const Template: ComponentStory<typeof Divider> = props => (
-  <div tw='w-screen h-40'>
-    <Divider {...props} />
+const Template: ComponentStory<typeof Divider> = args => (
+  <div tw='w-screen h-screen flex justify-center items-center'>
+    <Divider {...args} />
   </div>
 );
 
-export const Usage = Template.bind({});
+export const Col = Template.bind({});
+Col.args = { col: true };
+
+export const Row = Template.bind({});
+Row.args = { row: true };

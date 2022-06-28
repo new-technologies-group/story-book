@@ -21,6 +21,12 @@ export default {
   },
 } as ComponentMeta<typeof Bullet>;
 
-const Template: ComponentStory<typeof Bullet> = props => <Bullet {...props} />;
+const Template: ComponentStory<typeof Bullet> = args => <Bullet {...args} />;
 
-export const Usage = Template.bind({});
+export const General = Template.bind({});
+
+export const Complete = Template.bind({});
+Complete.args = { complete: true };
+
+export const InProgress = Template.bind({});
+InProgress.args = { inProgress: true };

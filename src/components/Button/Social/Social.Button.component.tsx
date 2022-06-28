@@ -72,6 +72,7 @@ export const SocialButton: React.FC<SocialButtonProps> = ({
 }) => {
   return (
     <_SocialButton
+      social
       icon={icon}
       {...props}
     >

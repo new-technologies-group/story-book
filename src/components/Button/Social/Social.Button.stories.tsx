@@ -37,4 +37,26 @@ const Template: ComponentStory<typeof SocialButton> = props => (
   <SocialButton {...props}>Social Button</SocialButton>
 );
 
-export const Usage = Template.bind({});
+export const Twitter = Template.bind({});
+Twitter.args = { icon: 'twitter' };
+
+export const Discord = Template.bind({});
+Discord.args = { icon: 'discord' };
+
+export const Linkedin = Template.bind({});
+Linkedin.args = { icon: 'linkedin' };
+
+export const Twitch = Template.bind({});
+Twitch.args = { icon: 'twitch' };
+
+export const Instagram = Template.bind({});
+Instagram.args = { icon: 'instagram' };
+
+export const MagicEden = Template.bind({});
+MagicEden.args = { icon: 'magicEden' };
+
+export const OpenSea = Template.bind({});
+OpenSea.args = { icon: 'openSea' };
+
+export const YouTube = Template.bind({});
+YouTube.args = { icon: 'youTube' };

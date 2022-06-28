@@ -2,6 +2,7 @@ import { ReactNode } from 'react';
 
 export interface ButtonProps {
   variant?: 'primary' | 'secondary' | 'text';
+  social?: boolean;
 }
 
 export interface SocialButtonProps extends ButtonProps {

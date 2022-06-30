@@ -1,1 +1,1 @@
-export * from './Form.Select.component';
+export * from './Form.Select';

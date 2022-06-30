@@ -1,1 +1,1 @@
-export * from './Nav.Overlay.component';
+export * from './Nav.Overlay';

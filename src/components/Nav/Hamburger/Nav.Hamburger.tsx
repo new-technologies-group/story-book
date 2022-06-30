@@ -2,7 +2,7 @@ import React from 'react';
 import { SideNavProps } from '../Nav.types';
 import 'twin.macro';
 
-export const _Hamburger = ({ active }: SideNavProps) => (
+export const StyledHamburger = ({ active }: SideNavProps) => (
   <svg
     xmlns='http://www.w3.org/2000/svg'
     viewBox='0 0 24 24'

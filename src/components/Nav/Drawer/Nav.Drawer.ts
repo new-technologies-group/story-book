@@ -1,7 +1,7 @@
 import tw, { styled, css } from 'twin.macro';
 import { SideNavProps } from '../Nav.types';
 
-export const _Drawer = styled.div<SideNavProps>(({ active }) => [
+export const StyledDrawer = styled.div<SideNavProps>(({ active }) => [
   tw`fixed bottom-0 right-[-100%] w-full md:w-1/2 lg:w-1/3 bg-neutral-900 border-l border-neutral-700 transition-all duration-300 ease-linear flex flex-col justify-between z-10`,
   active && tw`right-0`,
 

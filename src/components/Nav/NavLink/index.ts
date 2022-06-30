@@ -1,1 +1,1 @@
-export * from './Nav.NavLink.component';
+export * from './Nav.NavLink';

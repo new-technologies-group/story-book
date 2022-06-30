@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import 'twin.macro';
 
-export const _Logo = () => (
+export const StyledLogo = () => (
   <Link
     to='/'
     onClick={() => window.scrollTo(0, 0)}

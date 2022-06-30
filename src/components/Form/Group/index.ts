@@ -1,1 +1,1 @@
-export * from './Form.Group.component';
+export * from './Form.Group';

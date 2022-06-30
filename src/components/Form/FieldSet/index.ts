@@ -1,1 +1,1 @@
-export * from './Form.Fieldset.component';
+export * from './Form.Fieldset';

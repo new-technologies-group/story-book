@@ -2,9 +2,9 @@ import React from 'react';
 import tw, { styled, css } from 'twin.macro';
 import { Icon } from '../../Icons';
 import { SocialButtonProps } from '../Button.types';
-import { Button } from '../Button.component';
+import { Button } from '../Button';
 
-const _SocialButton = styled(Button)<SocialButtonProps>(({ icon }) => [
+const StyledSocialButton = styled(Button)<SocialButtonProps>(({ icon }) => [
   tw`flex justify-center items-center hover:text-white`,
   css`
     &:hover {
@@ -71,7 +71,7 @@ export const SocialButton: React.FC<SocialButtonProps> = ({
   ...props
 }) => {
   return (
-    <_SocialButton
+    <StyledSocialButton
       social
       icon={icon}
       {...props}
@@ -83,6 +83,6 @@ export const SocialButton: React.FC<SocialButtonProps> = ({
           tw='ml-2'
         />
       </div>
-    </_SocialButton>
+    </StyledSocialButton>
   );
 };

@@ -1,1 +1,1 @@
-export * from './Form.Legend.component';
+export * from './Form.Legend';

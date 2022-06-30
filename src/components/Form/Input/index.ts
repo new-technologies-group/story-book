@@ -1,1 +1,1 @@
-export { Input } from './Form.Input.component';
+export { Input } from './Form.Input';

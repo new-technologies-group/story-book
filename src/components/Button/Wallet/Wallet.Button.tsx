@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from '../Button.component';
+import { Button } from '../Button';
 import { Icon } from '../../Icons';
 import 'twin.macro';
 

@@ -1,1 +1,1 @@
-export * from './Wrappers.Img.component';
+export * from './Wrappers.Img';

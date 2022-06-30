@@ -1,5 +1,5 @@
 import React from 'react';
-import { SocialIcon } from './Icon.Social.component';
+import { SocialIcon } from './Icon.Social';
 import { SocialData } from '../Icons.types';
 
 export const SocialIconLink = ({ to, variant }: SocialData) => {

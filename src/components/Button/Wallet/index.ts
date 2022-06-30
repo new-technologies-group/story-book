@@ -1,1 +1,1 @@
-export * from './Wallet.Button.component';
+export * from './Wallet.Button';

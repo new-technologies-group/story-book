@@ -1,1 +1,1 @@
-export * from './Form.Switch.component';
+export * from './Form.Switch';

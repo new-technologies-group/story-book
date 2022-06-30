@@ -27,7 +27,7 @@ const Template: ComponentStory<typeof Card.Base> = ({
   featuredInverse,
   featuredSides,
 }) => (
-  <div tw='md:px-40 lg:px-80'>
+  <div tw='md:px-20 lg:px-40'>
     <Card.Base
       featured={featured}
       featuredInverse={featuredInverse}

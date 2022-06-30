@@ -1,1 +1,1 @@
-export * from './Form.CheckBox.component';
+export * from './Form.CheckBox';

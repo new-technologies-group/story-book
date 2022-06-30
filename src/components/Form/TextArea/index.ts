@@ -1,1 +1,1 @@
-export * from './Form.TextArea.component';
+export * from './Form.TextArea';

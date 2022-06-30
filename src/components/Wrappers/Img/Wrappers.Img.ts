@@ -1,8 +1,7 @@
-import React from 'react';
 import tw, { styled, css } from 'twin.macro';
 import { ImgContainerProps } from './Wrappers.Img.types';
 
-const _Img = styled.div<ImgContainerProps>(({ square, circle, featured }) => [
+export const Img = styled.div<ImgContainerProps>(({ square, circle, featured }) => [
   tw`relative overflow-hidden w-full transition-all duration-300 ease-in rounded-xl`,
 
   square &&
@@ -30,7 +29,3 @@ const _Img = styled.div<ImgContainerProps>(({ square, circle, featured }) => [
       }
     `,
 ]);
-
-export const Img: React.FC<ImgContainerProps> = props => (
-  <_Img {...props}>{props.children}</_Img>
-);

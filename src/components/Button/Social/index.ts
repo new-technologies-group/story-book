@@ -1,1 +1,1 @@
-export * from './Social.Button.component';
+export * from './Social.Button';

@@ -1,1 +1,1 @@
-export * from './Bullet.component';
+export * from './Bullet';

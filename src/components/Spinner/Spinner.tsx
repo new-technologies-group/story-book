@@ -1,9 +1,9 @@
 import React from 'react';
-import { _Overlay } from '../Nav/components';
+import { StyledOverlay } from '../Nav/Overlay';
 import 'twin.macro';
 
 export const Spinner = () => (
-  <_Overlay
+  <StyledOverlay
     active
     tw='w-screen h-screen flex justify-center items-center'
   >
@@ -13,5 +13,5 @@ export const Spinner = () => (
         alt='loading...'
       />
     </div>
-  </_Overlay>
+  </StyledOverlay>
 );

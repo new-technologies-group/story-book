@@ -1,11 +1,11 @@
 import React, { FC, useState, useRef, useEffect } from 'react';
 import { Button } from '../Button';
-import { _Base } from './Base';
-import { _Overlay } from './Overlay';
-import { _Drawer } from './Drawer';
-import { _Hamburger } from './Hamburger';
-import { _Logo } from './Logo';
-import { _NavLink } from './NavLink';
+import { StyledBase } from './Base';
+import { StyledOverlay } from './Overlay';
+import { StyledDrawer } from './Drawer';
+import { StyledHamburger } from './Hamburger';
+import { StyledLogo } from './Logo';
+import { StyledNavLink } from './NavLink';
 import { SocialIconLink, socialList } from '../Icons';
 import { NavProps } from './Nav.types';
 import 'twin.macro';
@@ -37,11 +37,11 @@ export const Nav: FC<NavProps> = ({ links }) => {
 
   return (
     <>
-      <_Base
+      <StyledBase
         ref={navRef}
         sticky={sticky}
       >
-        <_Logo />
+        <StyledLogo />
         <div>
           <Button
             variant='secondary'
@@ -51,10 +51,10 @@ export const Nav: FC<NavProps> = ({ links }) => {
               if (activeBurger) sideRef.current.focus();
             }}
           >
-            <_Hamburger active={activeBurger} />
+            <StyledHamburger active={activeBurger} />
           </Button>
         </div>
-        <_Drawer
+        <StyledDrawer
           ref={sideRef}
           active={activeBurger}
           style={{
@@ -67,14 +67,14 @@ export const Nav: FC<NavProps> = ({ links }) => {
           <ul>
             {links.map(link => (
               <li key={link.to}>
-                <_NavLink
+                <StyledNavLink
                   hash={link.hash}
                   modal={link.modal}
                   to={link.to}
                   onClick={() => setActiveBurger(false)}
                 >
                   {link.text}
-                </_NavLink>
+                </StyledNavLink>
               </li>
             ))}
           </ul>
@@ -87,9 +87,9 @@ export const Nav: FC<NavProps> = ({ links }) => {
               />
             ))}
           </div>
-        </_Drawer>
-      </_Base>
-      <_Overlay
+        </StyledDrawer>
+      </StyledBase>
+      <StyledOverlay
         active={activeBurger}
         onClick={() => setActiveBurger(false)}
       />

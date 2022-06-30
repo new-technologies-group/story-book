@@ -1,1 +1,1 @@
-export * from './Nav.Hamburger.component';
+export * from './Nav.Hamburger';

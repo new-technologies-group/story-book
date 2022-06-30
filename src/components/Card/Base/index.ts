@@ -1,1 +1,1 @@
-export * from './Card.Base.component';
+export * from './Card.Base';

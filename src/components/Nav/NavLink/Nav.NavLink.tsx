@@ -3,7 +3,7 @@ import { useLocation, Link } from 'react-router-dom';
 import { NavLinkProps } from '../Nav.types';
 import 'twin.macro';
 
-export const _NavLink: React.FC<NavLinkProps> = ({ hash, modal, to, children }) => {
+export const StyledNavLink: React.FC<NavLinkProps> = ({ hash, modal, to, children }) => {
   const location = useLocation();
 
   if (hash)

@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import { theme } from 'twin.macro';
 
 import { GlobalStyles } from '../src/styles';
@@ -23,9 +24,9 @@ export const parameters = {
 
 export const decorators = [
   Story => (
-    <>
+    <BrowserRouter>
       <GlobalStyles />
       <Story />
-    </>
+    </BrowserRouter>
   ),
 ];

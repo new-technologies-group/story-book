@@ -24,7 +24,8 @@
     "consistent-return": "off",
     "radix": "off",
     "curly": "off",
-    "nonblock-statement-body-position": "off"
+    "nonblock-statement-body-position": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/jsx-pascal-case": "off"
   }
 }
-

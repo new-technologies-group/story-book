@@ -7,7 +7,7 @@ import { StyledHamburger } from './Hamburger';
 import { StyledLogo } from './Logo';
 import { StyledNavLink } from './NavLink';
 import { SocialIconLink, socialList } from '../Icons';
-import { NavProps } from './Nav.types';
+import { NavProps } from './nav.types';
 import 'twin.macro';
 
 export const Nav: FC<NavProps> = ({ links }) => {

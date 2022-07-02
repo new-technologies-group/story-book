@@ -1,7 +1,7 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 import { Nav, Footer } from '../../components';
-import { NavProps } from '../../components/Nav/Nav.types';
+import { NavProps } from '../../components/Nav/nav.types';
 import 'twin.macro';
 
 export const Main: React.FC<NavProps> = ({ links }) => {

@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it works 1`] = `
+.c0 {
+  margin: 0.5rem;
+  --tw-text-opacity: 1;
+  color: rgba(255,255,255,var(--tw-text-opacity));
+  font-weight: 700;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-radius: 9999px;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0.4,0,1,1);
+  transition-timing-function: cubic-bezier(0.4,0,1,1);
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  background-size: 125% !important;
+  background: linear-gradient(var(--neutral-900),var(--neutral-900)) padding-box, linear-gradient(to left,var(--purple-700),var(--pink-500)) border-box;
+  border-radius: 50em;
+  border: 1px solid transparent;
+}
+
+.c0:hover {
+  --tw-translate-y: -0.125rem;
+  -webkit-transform: var(--tw-transform);
+  -ms-transform: var(--tw-transform);
+  transform: var(--tw-transform);
+}
+
+.c0:hover {
+  background-size: 100% !important;
+}
+
+.c0:hover {
+  box-shadow: 0 0 5px #fff,-3px 0 10px var(--pink-500), 3px 0 10px var(--purple-500),0 0 6px var(--purple-500), -3px 0 9px var(--pink-500),3px 0 9px var(--pink-600);
+}
+
+<button
+  class="c0"
+>
+  Primary
+</button>
+`;

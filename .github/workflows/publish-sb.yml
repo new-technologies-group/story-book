@@ -2,9 +2,8 @@ name: Publish Storybook
 
 on:
   push:
-    branches: [master]
-  paths:
-    - 'src/components/**'
+    branches:
+      - master
 jobs:
   quality:
     runs-on: ubuntu-latest
@@ -22,7 +21,7 @@ jobs:
       - run: yarn test
   publish:
     runs-on: ubuntu-latest
-    need: [quality]
+    needs: [quality]
     steps:
       - uses: actions/checkout@v3
       - name: Node.js version ${{ matrix.node-version }}

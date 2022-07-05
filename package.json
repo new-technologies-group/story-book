@@ -31,7 +31,7 @@
     "start": "tsdx watch",
     "build": "tsdx build",
     "test": "tsdx test --passWithNoTests",
-    "lint": "tsdx lint",
+    "lint": "eslint src/**/*.{ts,tsx}",
     "format": "prettier --write 'src/**/*.{ts,tsx,css,md,json}'",
     "prepare:package": "tsdx build",
     "size": "size-limit",

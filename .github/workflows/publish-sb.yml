@@ -1,0 +1,39 @@
+name: Publish Storybook
+
+on:
+  push:
+    branches: [master]
+  paths:
+    - 'src/components/**'
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [14.x, 16.x]
+    steps:
+      - uses: actions/checkout@v3
+      - name: Node.js version ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'yarn'
+      - run: yarn install
+      - run: yarn test
+  publish:
+    runs-on: ubuntu-latest
+    need: [quality]
+    steps:
+      - uses: actions/checkout@v3
+      - name: Node.js version ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'yarn'
+      - run: yarn install
+      - run: yarn build:storybook
+      - name: Deploy Storybook to Github Pages
+        uses: JamesIves/github-pages-deploy-action@v4.2.5
+        with:
+          branch: storybook
+          folder: static-storybook

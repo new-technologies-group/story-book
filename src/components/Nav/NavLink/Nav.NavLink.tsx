@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLocation, Link } from 'react-router-dom';
-import { NavLinkProps } from '../Nav.types';
+import { NavLinkProps } from '../nav.types';
 import 'twin.macro';
 
 export const StyledNavLink: React.FC<NavLinkProps> = ({ hash, modal, to, children }) => {

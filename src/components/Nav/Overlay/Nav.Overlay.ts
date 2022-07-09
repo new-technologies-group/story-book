@@ -1,5 +1,5 @@
 import tw, { styled } from 'twin.macro';
-import { SideNavProps } from '../Nav.types';
+import { SideNavProps } from '../nav.types';
 
 export const StyledOverlay = styled.div<SideNavProps>(({ active }) => [
   active &&

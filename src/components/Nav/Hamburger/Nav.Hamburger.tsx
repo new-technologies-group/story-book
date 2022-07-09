@@ -1,5 +1,5 @@
 import React from 'react';
-import { SideNavProps } from '../Nav.types';
+import { SideNavProps } from '../nav.types';
 import 'twin.macro';
 
 export const StyledHamburger = ({ active }: SideNavProps) => (

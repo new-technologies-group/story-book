@@ -6,6 +6,8 @@ import dts from 'rollup-plugin-dts';
 import { terser } from 'rollup-plugin-terser';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import json from '@rollup/plugin-json';
+import copy from 'rollup-plugin-copy';
+import postcss from 'rollup-plugin-postcss';
 
 const packageJson = require('./package.json');
 
@@ -27,9 +29,21 @@ export default [
     plugins: [
       peerDepsExternal(),
       resolve(),
+      postcss({
+        minimize: true,
+        modules: true,
+
+        extract: true,
+      }),
       commonjs(),
       json(),
       typescript({ tsconfig: './tsconfig.json' }),
+      copy({
+        targets: [
+          { src: 'tailwind.config.js', dest: 'dist/cjs' },
+          { src: 'types/twin.d.ts', dest: 'dist/cjs/types' },
+        ],
+      }),
       terser(),
     ],
     external: ['react', 'react-dom', 'styled-components'],

@@ -1,6 +1,6 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import { Bullet } from '.';
+import { Bullet } from './Bullet';
 
 export default {
   title: 'Bullet',

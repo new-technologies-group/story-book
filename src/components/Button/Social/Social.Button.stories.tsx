@@ -1,6 +1,6 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import { SocialButton } from '.';
+import { SocialButton } from './Social.Button';
 
 export default {
   title: 'Social Button',

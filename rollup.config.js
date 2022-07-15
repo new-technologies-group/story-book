@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 import resolve from '@rollup/plugin-node-resolve';
+import babel from '@rollup/plugin-babel';
 import commonjs from '@rollup/plugin-commonjs';
 import typescript from '@rollup/plugin-typescript';
 import dts from 'rollup-plugin-dts';
@@ -28,14 +29,15 @@ export default [
     ],
     plugins: [
       peerDepsExternal(),
-      resolve(),
+      resolve({ preferBuiltins: true }),
+      commonjs(),
+      babel({ babelHelpers: 'bundled', babelrc: true }),
       postcss({
         minimize: true,
         modules: true,
 
         extract: true,
       }),
-      commonjs(),
       json(),
       typescript({ tsconfig: './tsconfig.json' }),
       copy({
